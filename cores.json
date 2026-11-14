@@ -1,0 +1,1387 @@
+{
+  "formatVersion": 1,
+  "chimeraCsx": "1.0.0",
+  "directory": "1.0.0Cores",
+  "latestNightlyOnOrBefore": "2026-10-27",
+  "generated": "2026-11-14",
+  "packages": 55,
+  "coresWithoutRelease": [
+    "mesen",
+    "cemu",
+    "86box",
+    "zesarux",
+    "rsdkv5u",
+    "scummvm",
+    "supermodel"
+  ],
+  "cores": [
+    {
+      "id": "applewin",
+      "rosterName": "AppleWin",
+      "packageName": "AppleWin",
+      "systems": [
+        {
+          "id": "AppleII",
+          "name": "Apple II"
+        }
+      ],
+      "repository": "https://github.com/ToolAssisted-run/chimera-core-applewin",
+      "nightly": "nightly-2026-10-11",
+      "released": "2026-10-11T10:53:17Z",
+      "commit": "449dcc6b06076f13feacc0574f81f24273018a9d",
+      "versionDate": "2026-10-10T16:38:55Z",
+      "file": "1.0.0Cores/applewin-449dcc6b06076f13feacc0574f81f24273018a9d.chimeraCore",
+      "size": 1517212,
+      "sha256": "3162ee5909f4f565bdbcc0d6803fd85661c6a86bfdf5415214106189c4d32657",
+      "releaseUrl": "https://github.com/ToolAssisted-run/chimera-core-applewin/releases/tag/nightly-2026-10-11"
+    },
+    {
+      "id": "ares",
+      "rosterName": "ares",
+      "packageName": "ares",
+      "systems": [
+        {
+          "id": "N64",
+          "name": "Nintendo 64"
+        },
+        {
+          "id": "N64DD",
+          "name": "Nintendo 64DD"
+        },
+        {
+          "id": "NES",
+          "name": "Nintendo Entertainment System"
+        },
+        {
+          "id": "GEN",
+          "name": "Mega Drive / Genesis"
+        },
+        {
+          "id": "SMS",
+          "name": "Master System"
+        },
+        {
+          "id": "GG",
+          "name": "Game Gear"
+        },
+        {
+          "id": "SG",
+          "name": "SG-1000"
+        },
+        {
+          "id": "A26",
+          "name": "Atari 2600"
+        },
+        {
+          "id": "MYV",
+          "name": "MyVision"
+        },
+        {
+          "id": "GB",
+          "name": "Game Boy"
+        },
+        {
+          "id": "GBC",
+          "name": "Game Boy Color"
+        },
+        {
+          "id": "WS",
+          "name": "WonderSwan"
+        },
+        {
+          "id": "WSC",
+          "name": "WonderSwan Color"
+        },
+        {
+          "id": "ZXS",
+          "name": "ZX Spectrum"
+        },
+        {
+          "id": "GBA",
+          "name": "Game Boy Advance"
+        },
+        {
+          "id": "CV",
+          "name": "ColecoVision"
+        },
+        {
+          "id": "MSX",
+          "name": "MSX"
+        },
+        {
+          "id": "PS1",
+          "name": "PlayStation"
+        },
+        {
+          "id": "A52",
+          "name": "Atari 5200"
+        },
+        {
+          "id": "NGP",
+          "name": "Neo Geo Pocket"
+        },
+        {
+          "id": "NGPC",
+          "name": "Neo Geo Pocket Color"
+        },
+        {
+          "id": "NG",
+          "name": "Neo Geo AES"
+        },
+        {
+          "id": "SFC",
+          "name": "Super Famicom / SNES"
+        },
+        {
+          "id": "32X",
+          "name": "Mega Drive 32X"
+        },
+        {
+          "id": "MSX2",
+          "name": "MSX2"
+        },
+        {
+          "id": "MCD",
+          "name": "Mega CD / Sega CD"
+        },
+        {
+          "id": "PCE",
+          "name": "PC Engine / TurboGrafx-16"
+        },
+        {
+          "id": "SGX",
+          "name": "SuperGrafx"
+        },
+        {
+          "id": "MCD32X",
+          "name": "Mega CD 32X / Sega CD 32X"
+        },
+        {
+          "id": "PCECD",
+          "name": "PC Engine CD"
+        }
+      ],
+      "repository": "https://github.com/ToolAssisted-run/chimera-core-ares",
+      "nightly": "nightly-2026-10-22",
+      "released": "2026-10-22T09:27:11Z",
+      "commit": "2ab01b5a8a71487453caa677d2b0137d2feddf94",
+      "versionDate": "2026-10-21T16:11:47Z",
+      "file": "1.0.0Cores/ares-2ab01b5a8a71487453caa677d2b0137d2feddf94.chimeraCore",
+      "size": 4990616,
+      "sha256": "3dd0e1f3202297e8b9f1f5d9d4329f33b4c5c1393752e027cadffa8576bf7a0d",
+      "releaseUrl": "https://github.com/ToolAssisted-run/chimera-core-ares/releases/tag/nightly-2026-10-22"
+    },
+    {
+      "id": "azahar",
+      "rosterName": "Azahar",
+      "packageName": "Azahar",
+      "systems": [
+        {
+          "id": "3DS",
+          "name": "Nintendo 3DS"
+        }
+      ],
+      "repository": "https://github.com/ToolAssisted-run/chimera-core-azahar",
+      "nightly": "nightly-2026-10-24",
+      "released": "2026-10-24T09:16:03Z",
+      "commit": "a8ba29aedfc450e1d39466dcd74fdde74c882ef2",
+      "versionDate": "2026-10-24T06:50:29Z",
+      "file": "1.0.0Cores/azahar-a8ba29aedfc450e1d39466dcd74fdde74c882ef2.chimeraCore",
+      "size": 10371773,
+      "sha256": "a4af465def0b42e6fb2ae8b977161050d50b7c1a8547e9464c8f21c33ba7908c",
+      "releaseUrl": "https://github.com/ToolAssisted-run/chimera-core-azahar/releases/tag/nightly-2026-10-24"
+    },
+    {
+      "id": "cadmium",
+      "rosterName": "Cadmium",
+      "packageName": "Cadmium",
+      "systems": [
+        {
+          "id": "CHIP8",
+          "name": "CHIP-8"
+        }
+      ],
+      "repository": "https://github.com/ToolAssisted-run/chimera-core-cadmium",
+      "nightly": "nightly-2026-10-13",
+      "released": "2026-10-13T12:59:01Z",
+      "commit": "23000d99da8062e8b8ee05e1daaf4fe5889c488b",
+      "versionDate": "2026-10-12T09:54:05Z",
+      "file": "1.0.0Cores/cadmium-23000d99da8062e8b8ee05e1daaf4fe5889c488b.chimeraCore",
+      "size": 1378491,
+      "sha256": "a03d5712d0908d187873db63e23bdb64ef0f5e58a66496dec4d39a20ada1490c",
+      "releaseUrl": "https://github.com/ToolAssisted-run/chimera-core-cadmium/releases/tag/nightly-2026-10-13"
+    },
+    {
+      "id": "dolphin",
+      "rosterName": "Dolphin",
+      "packageName": "Dolphin",
+      "systems": [
+        {
+          "id": "GC",
+          "name": "GameCube"
+        },
+        {
+          "id": "Wii",
+          "name": "Wii"
+        },
+        {
+          "id": "Triforce",
+          "name": "Triforce"
+        }
+      ],
+      "repository": "https://github.com/ToolAssisted-run/chimera-core-dolphin",
+      "nightly": "nightly-2026-10-24",
+      "released": "2026-10-24T09:38:30Z",
+      "commit": "1cb28ff26db34753b3efa1a35c1770f24cda6d71",
+      "versionDate": "2026-10-24T06:50:27Z",
+      "file": "1.0.0Cores/dolphin-1cb28ff26db34753b3efa1a35c1770f24cda6d71.chimeraCore",
+      "size": 11018176,
+      "sha256": "f76968cc11a0a18ff0b11a7dca189f8e6a494dbc2273f56a33fef1e5fd2a7cc2",
+      "releaseUrl": "https://github.com/ToolAssisted-run/chimera-core-dolphin/releases/tag/nightly-2026-10-24"
+    },
+    {
+      "id": "dosbox-x",
+      "rosterName": "DOSBox-X",
+      "packageName": "DOSBox-X",
+      "systems": [
+        {
+          "id": "DOS",
+          "name": "MS-DOS"
+        }
+      ],
+      "repository": "https://github.com/ToolAssisted-run/chimera-core-dosbox-x",
+      "nightly": "nightly-2026-10-22",
+      "released": "2026-10-22T09:55:00Z",
+      "commit": "5ceb0851a603f6c9ca3f55727290ea56b4643db8",
+      "versionDate": "2026-10-21T16:27:45Z",
+      "file": "1.0.0Cores/dosbox-x-5ceb0851a603f6c9ca3f55727290ea56b4643db8.chimeraCore",
+      "size": 9342211,
+      "sha256": "42b7e8b9ecec017854cd621024a1ad98d8c66b143d30addb91b090183b3ab225",
+      "releaseUrl": "https://github.com/ToolAssisted-run/chimera-core-dosbox-x/releases/tag/nightly-2026-10-22"
+    },
+    {
+      "id": "dsda",
+      "rosterName": "DSDA-Doom",
+      "packageName": "DSDA-Doom",
+      "systems": [
+        {
+          "id": "Doom",
+          "name": "Doom"
+        }
+      ],
+      "repository": "https://github.com/ToolAssisted-run/chimera-core-dsda",
+      "nightly": "nightly-2026-10-11",
+      "released": "2026-10-11T10:52:56Z",
+      "commit": "9a0fed48469f4322fa8c2ebd90e8ed7407b78687",
+      "versionDate": "2026-10-10T16:50:33Z",
+      "file": "1.0.0Cores/dsda-9a0fed48469f4322fa8c2ebd90e8ed7407b78687.chimeraCore",
+      "size": 4353365,
+      "sha256": "ff4cc018e5186552a5abf0d0e92fa59b6ed8e81218ed6101fd52c529f84f49da",
+      "releaseUrl": "https://github.com/ToolAssisted-run/chimera-core-dsda/releases/tag/nightly-2026-10-11"
+    },
+    {
+      "id": "duckstation",
+      "rosterName": "DuckStation",
+      "packageName": "DuckStation",
+      "systems": [
+        {
+          "id": "PS1",
+          "name": "PlayStation"
+        },
+        {
+          "id": "NAMCOS11",
+          "name": "Namco System 11"
+        },
+        {
+          "id": "KONAMIGQ",
+          "name": "Konami GQ"
+        }
+      ],
+      "repository": "https://github.com/ToolAssisted-run/chimera-core-duckstation",
+      "nightly": "nightly-2026-10-24",
+      "released": "2026-10-24T08:45:22Z",
+      "commit": "d6921e542cec3d1f5102a57085f1fb55f28f1f51",
+      "versionDate": "2026-10-24T06:50:38Z",
+      "file": "1.0.0Cores/duckstation-d6921e542cec3d1f5102a57085f1fb55f28f1f51.chimeraCore",
+      "size": 37694894,
+      "sha256": "461258209664c56251fd9479e6b0e3186f0c2f4ad7b366d4e3c544737a5009ef",
+      "releaseUrl": "https://github.com/ToolAssisted-run/chimera-core-duckstation/releases/tag/nightly-2026-10-24"
+    },
+    {
+      "id": "eka2l1",
+      "rosterName": "EKA2L1",
+      "packageName": "EKA2L1",
+      "systems": [
+        {
+          "id": "SYMBIAN",
+          "name": "Symbian (Nokia N-Gage)"
+        }
+      ],
+      "repository": "https://github.com/ToolAssisted-run/chimera-core-eka2l1",
+      "nightly": "nightly-2026-10-20",
+      "released": "2026-10-20T09:40:00Z",
+      "commit": "b6e158f61a4f187941d05c94d3a74cf65b284e05",
+      "versionDate": "2026-10-19T15:33:59Z",
+      "file": "1.0.0Cores/eka2l1-b6e158f61a4f187941d05c94d3a74cf65b284e05.chimeraCore",
+      "size": 13030201,
+      "sha256": "4c2cb67254d42e47b0a579a389082a2ee626a4dd6efc34e6515a185198177846",
+      "releaseUrl": "https://github.com/ToolAssisted-run/chimera-core-eka2l1/releases/tag/nightly-2026-10-20"
+    },
+    {
+      "id": "fbneo",
+      "rosterName": "FBNeo",
+      "packageName": "FBNeo",
+      "systems": [
+        {
+          "id": "CPS1",
+          "name": "Capcom CPS-1"
+        },
+        {
+          "id": "CPS2",
+          "name": "Capcom CPS-2"
+        },
+        {
+          "id": "CPS3",
+          "name": "Capcom CPS-3"
+        },
+        {
+          "id": "NEOGEO",
+          "name": "SNK Neo Geo MVS"
+        },
+        {
+          "id": "SYS16",
+          "name": "Sega System 16"
+        },
+        {
+          "id": "NEOCD",
+          "name": "SNK Neo Geo CD"
+        }
+      ],
+      "repository": "https://github.com/ToolAssisted-run/chimera-core-fbneo",
+      "nightly": "nightly-2026-10-22",
+      "released": "2026-10-22T09:20:00Z",
+      "commit": "5d6c350cfd94652ef7f4870003bcbcb7017e6b45",
+      "versionDate": "2026-10-21T16:11:58Z",
+      "file": "1.0.0Cores/fbneo-5d6c350cfd94652ef7f4870003bcbcb7017e6b45.chimeraCore",
+      "size": 2205721,
+      "sha256": "5f6120adf0152b35f325c8880d76ca02927c81927bc13bdaaf94613fc77d618c",
+      "releaseUrl": "https://github.com/ToolAssisted-run/chimera-core-fbneo/releases/tag/nightly-2026-10-22"
+    },
+    {
+      "id": "flycast",
+      "rosterName": "Flycast",
+      "packageName": "Flycast",
+      "systems": [
+        {
+          "id": "DC",
+          "name": "Dreamcast"
+        },
+        {
+          "id": "NAOMI",
+          "name": "Sega NAOMI"
+        },
+        {
+          "id": "NAOMI2",
+          "name": "Sega NAOMI 2"
+        },
+        {
+          "id": "AW",
+          "name": "Sammy Atomiswave"
+        }
+      ],
+      "repository": "https://github.com/ToolAssisted-run/chimera-core-flycast",
+      "nightly": "nightly-2026-10-24",
+      "released": "2026-10-24T09:02:39Z",
+      "commit": "9fba0493b230847af431bd195080201b216ad3d4",
+      "versionDate": "2026-10-24T06:50:40Z",
+      "file": "1.0.0Cores/flycast-9fba0493b230847af431bd195080201b216ad3d4.chimeraCore",
+      "size": 33870667,
+      "sha256": "901acbc41cbab2978ea70a41e32ae5dabac29839f861548fe601d428dc606329",
+      "releaseUrl": "https://github.com/ToolAssisted-run/chimera-core-flycast/releases/tag/nightly-2026-10-24"
+    },
+    {
+      "id": "freej2me",
+      "rosterName": "FreeJ2ME-Plus",
+      "packageName": "FreeJ2ME-Plus",
+      "systems": [
+        {
+          "id": "J2ME",
+          "name": "J2ME (Java phones)"
+        }
+      ],
+      "repository": "https://github.com/ToolAssisted-run/chimera-core-freej2me",
+      "nightly": "nightly-2026-10-20",
+      "released": "2026-10-20T11:47:06Z",
+      "commit": "80db8b0935cfe2a6a6c13657a1e1784d7ba26bdc",
+      "versionDate": "2026-10-20T06:51:55Z",
+      "file": "1.0.0Cores/freej2me-80db8b0935cfe2a6a6c13657a1e1784d7ba26bdc.chimeraCore",
+      "size": 34901789,
+      "sha256": "ed21be72ded731499122fdcc3fbdfbafc6e2d3fafdb5391fec41eeca84bfdf7f",
+      "releaseUrl": "https://github.com/ToolAssisted-run/chimera-core-freej2me/releases/tag/nightly-2026-10-20"
+    },
+    {
+      "id": "fuse",
+      "rosterName": "Fuse",
+      "packageName": "Fuse",
+      "systems": [
+        {
+          "id": "ZXS",
+          "name": "ZX Spectrum"
+        }
+      ],
+      "repository": "https://github.com/ToolAssisted-run/chimera-core-fuse",
+      "nightly": "nightly-2026-10-13",
+      "released": "2026-10-13T13:05:20Z",
+      "commit": "3e9981e5cbb1a3a6e5a8477d36cfa7ea82f6dcdd",
+      "versionDate": "2026-10-12T10:39:52Z",
+      "file": "1.0.0Cores/fuse-3e9981e5cbb1a3a6e5a8477d36cfa7ea82f6dcdd.chimeraCore",
+      "size": 849974,
+      "sha256": "13e4c312db090a63a4e6c5c9dcabc1a9c098f7c56e6666767e9fce94532662ab",
+      "releaseUrl": "https://github.com/ToolAssisted-run/chimera-core-fuse/releases/tag/nightly-2026-10-13"
+    },
+    {
+      "id": "gambatte",
+      "rosterName": "Gambatte",
+      "packageName": "Gambatte",
+      "systems": [
+        {
+          "id": "GB",
+          "name": "Game Boy"
+        },
+        {
+          "id": "GBC",
+          "name": "Game Boy Color"
+        },
+        {
+          "id": "SGB",
+          "name": "Super Game Boy"
+        },
+        {
+          "id": "GBL",
+          "name": "Game Boy Link"
+        }
+      ],
+      "repository": "https://github.com/ToolAssisted-run/chimera-core-gambatte",
+      "nightly": "nightly-2026-10-22",
+      "released": "2026-10-22T12:34:58Z",
+      "commit": "fc6a0787aba96c77b3c345558b4ec993788ef825",
+      "versionDate": "2026-10-21T18:00:04Z",
+      "file": "1.0.0Cores/gambatte-fc6a0787aba96c77b3c345558b4ec993788ef825.chimeraCore",
+      "size": 1064183,
+      "sha256": "17bab26d66e2200de7000352535e09b5406a7924653edff74316fb37c02b8ed5",
+      "releaseUrl": "https://github.com/ToolAssisted-run/chimera-core-gambatte/releases/tag/nightly-2026-10-22"
+    },
+    {
+      "id": "godot44",
+      "rosterName": "Godot 4.4",
+      "packageName": "Godot 4.4",
+      "systems": [
+        {
+          "id": "Godot",
+          "name": "Godot 4"
+        }
+      ],
+      "repository": "https://github.com/ToolAssisted-run/chimera-core-godot44",
+      "nightly": "nightly-2026-10-22",
+      "released": "2026-10-22T12:55:45Z",
+      "commit": "312de87697ca91f261ba9a795896cf8499cf1238",
+      "versionDate": "2026-10-21T19:33:05Z",
+      "file": "1.0.0Cores/godot44-312de87697ca91f261ba9a795896cf8499cf1238.chimeraCore",
+      "size": 57324360,
+      "sha256": "bd5d5a5b8f0e50cac1f2ab6c0217aa5979fdad4023bbec8d01fcc1ead5587a10",
+      "releaseUrl": "https://github.com/ToolAssisted-run/chimera-core-godot44/releases/tag/nightly-2026-10-22"
+    },
+    {
+      "id": "godot45",
+      "rosterName": "Godot 4.5",
+      "packageName": "Godot 4.5",
+      "systems": [
+        {
+          "id": "Godot",
+          "name": "Godot 4"
+        }
+      ],
+      "repository": "https://github.com/ToolAssisted-run/chimera-core-godot45",
+      "nightly": "nightly-2026-10-22",
+      "released": "2026-10-22T12:59:58Z",
+      "commit": "fb299788709b1179db346a74a8a855e60a80b42b",
+      "versionDate": "2026-10-21T19:33:07Z",
+      "file": "1.0.0Cores/godot45-fb299788709b1179db346a74a8a855e60a80b42b.chimeraCore",
+      "size": 57457730,
+      "sha256": "1f542d674b6143da09d9d0030a8df0fa0475fcf405012aa829a61ee5c3d713d2",
+      "releaseUrl": "https://github.com/ToolAssisted-run/chimera-core-godot45/releases/tag/nightly-2026-10-22"
+    },
+    {
+      "id": "godot46",
+      "rosterName": "Godot 4.6",
+      "packageName": "Godot 4.6",
+      "systems": [
+        {
+          "id": "Godot",
+          "name": "Godot 4"
+        }
+      ],
+      "repository": "https://github.com/ToolAssisted-run/chimera-core-godot46",
+      "nightly": "nightly-2026-10-22",
+      "released": "2026-10-22T13:19:20Z",
+      "commit": "1cf008dc8fb9f83f8200a56b22ab7a2e30e33357",
+      "versionDate": "2026-10-21T19:33:10Z",
+      "file": "1.0.0Cores/godot46-1cf008dc8fb9f83f8200a56b22ab7a2e30e33357.chimeraCore",
+      "size": 58300248,
+      "sha256": "c426b995d04a11053ac7cc2e19a6e519504183b5960a858b143ccf474db9e38d",
+      "releaseUrl": "https://github.com/ToolAssisted-run/chimera-core-godot46/releases/tag/nightly-2026-10-22"
+    },
+    {
+      "id": "godot47",
+      "rosterName": "Godot 4.7",
+      "packageName": "Godot",
+      "systems": [
+        {
+          "id": "Godot",
+          "name": "Godot 4"
+        }
+      ],
+      "repository": "https://github.com/ToolAssisted-run/chimera-core-godot47",
+      "nightly": "nightly-2026-10-22",
+      "released": "2026-10-22T12:49:08Z",
+      "commit": "8f2fa218b43498a2d580f122cf1e6e491dfc43e4",
+      "versionDate": "2026-10-21T19:33:03Z",
+      "file": "1.0.0Cores/godot-8f2fa218b43498a2d580f122cf1e6e491dfc43e4.chimeraCore",
+      "size": 60163206,
+      "sha256": "5b5d8be28d490d790b0018b3ed6d4aa66f50f2eba8ce1ab15fe546c0ee14ff76",
+      "releaseUrl": "https://github.com/ToolAssisted-run/chimera-core-godot47/releases/tag/nightly-2026-10-22"
+    },
+    {
+      "id": "gpgx",
+      "rosterName": "Genesis Plus GX",
+      "packageName": "Genesis Plus GX",
+      "systems": [
+        {
+          "id": "GEN",
+          "name": "Mega Drive / Genesis"
+        },
+        {
+          "id": "SMS",
+          "name": "Master System"
+        },
+        {
+          "id": "GG",
+          "name": "Game Gear"
+        },
+        {
+          "id": "SG",
+          "name": "SG-1000"
+        },
+        {
+          "id": "PICO",
+          "name": "Sega Pico"
+        }
+      ],
+      "repository": "https://github.com/ToolAssisted-run/chimera-core-gpgx",
+      "nightly": "nightly-2026-10-22",
+      "released": "2026-10-22T09:19:55Z",
+      "commit": "e1b55209d8abe7044379215957db03e52b2b42b4",
+      "versionDate": "2026-10-21T18:03:57Z",
+      "file": "1.0.0Cores/gpgx-e1b55209d8abe7044379215957db03e52b2b42b4.chimeraCore",
+      "size": 815496,
+      "sha256": "1dc3e76f219295902db6e813aa66b0894dc9fd1d6263cc206ec4ee569094a846",
+      "releaseUrl": "https://github.com/ToolAssisted-run/chimera-core-gpgx/releases/tag/nightly-2026-10-22"
+    },
+    {
+      "id": "ikemen",
+      "rosterName": "Ikemen GO",
+      "packageName": "Ikemen GO",
+      "systems": [
+        {
+          "id": "IkemenGO",
+          "name": "Ikemen GO"
+        }
+      ],
+      "repository": "https://github.com/ToolAssisted-run/chimera-core-ikemen",
+      "nightly": "nightly-2026-10-22",
+      "released": "2026-10-22T12:58:05Z",
+      "commit": "44f0e26f6cbf0b30ce238df8aca9d554938f5164",
+      "versionDate": "2026-10-21T17:26:57Z",
+      "file": "1.0.0Cores/ikemen-44f0e26f6cbf0b30ce238df8aca9d554938f5164.chimeraCore",
+      "size": 37759836,
+      "sha256": "f3370e91c445e499b3badc604c9567828d710b840a9daadb125ce6ad943503f5",
+      "releaseUrl": "https://github.com/ToolAssisted-run/chimera-core-ikemen/releases/tag/nightly-2026-10-22"
+    },
+    {
+      "id": "mame",
+      "rosterName": "MAME",
+      "packageName": "MAME",
+      "systems": [
+        {
+          "id": "ARCADE",
+          "name": "Arcade"
+        }
+      ],
+      "repository": "https://github.com/ToolAssisted-run/chimera-core-mame",
+      "nightly": "nightly-2026-10-22",
+      "released": "2026-10-22T12:03:43Z",
+      "commit": "8f0ccbced89029602bb96a18b5b63a816eeaffe7",
+      "versionDate": "2026-10-21T16:12:05Z",
+      "file": "1.0.0Cores/mame-8f0ccbced89029602bb96a18b5b63a816eeaffe7.chimeraCore",
+      "size": 79011204,
+      "sha256": "78abc3645b5acc6f73747b510cee03a4085d736daf8813a821868c798350c152",
+      "releaseUrl": "https://github.com/ToolAssisted-run/chimera-core-mame/releases/tag/nightly-2026-10-22"
+    },
+    {
+      "id": "mamehome",
+      "rosterName": "MAME Home Systems",
+      "packageName": "MAME Home Systems",
+      "systems": [
+        {
+          "id": "A78",
+          "name": "Atari 7800"
+        },
+        {
+          "id": "INTV",
+          "name": "Intellivision"
+        },
+        {
+          "id": "VEC",
+          "name": "Vectrex"
+        },
+        {
+          "id": "O2",
+          "name": "Odyssey 2 / Videopac"
+        },
+        {
+          "id": "ChannelF",
+          "name": "Channel F"
+        },
+        {
+          "id": "AmstradCPC",
+          "name": "Amstrad CPC"
+        },
+        {
+          "id": "TI83",
+          "name": "TI-83"
+        },
+        {
+          "id": "BBC",
+          "name": "BBC Micro"
+        }
+      ],
+      "repository": "https://github.com/ToolAssisted-run/chimera-core-mamehome",
+      "nightly": "nightly-2026-10-24",
+      "released": "2026-10-24T12:54:28Z",
+      "commit": "a5597b480a16b1107d680d50efbd3c8f4e44bfcc",
+      "versionDate": "2026-10-23T23:10:37Z",
+      "file": "1.0.0Cores/mamehome-a5597b480a16b1107d680d50efbd3c8f4e44bfcc.chimeraCore",
+      "size": 18660997,
+      "sha256": "95bb0913754cbaea0848bccef44108d9663c3d35d8531bb088776e005e652c48",
+      "releaseUrl": "https://github.com/ToolAssisted-run/chimera-core-mamehome/releases/tag/nightly-2026-10-24"
+    },
+    {
+      "id": "mednafen",
+      "rosterName": "Mednafen",
+      "packageName": "Mednafen",
+      "systems": [
+        {
+          "id": "SAT",
+          "name": "Sega Saturn"
+        },
+        {
+          "id": "VB",
+          "name": "Virtual Boy"
+        },
+        {
+          "id": "PCFX",
+          "name": "PC-FX"
+        },
+        {
+          "id": "LYNX",
+          "name": "Atari Lynx"
+        },
+        {
+          "id": "STV",
+          "name": "Sega ST-V"
+        }
+      ],
+      "repository": "https://github.com/ToolAssisted-run/chimera-core-mednafen",
+      "nightly": "nightly-2026-10-22",
+      "released": "2026-10-22T10:37:15Z",
+      "commit": "0a9526d2bf76515c49c074ceea821e7ea7301e89",
+      "versionDate": "2026-10-21T16:12:07Z",
+      "file": "1.0.0Cores/mednafen-0a9526d2bf76515c49c074ceea821e7ea7301e89.chimeraCore",
+      "size": 2461865,
+      "sha256": "66bfece9f5188a6f218761acc4167e3dc0e7fcb3f3084398b09645e7cc74ce4f",
+      "releaseUrl": "https://github.com/ToolAssisted-run/chimera-core-mednafen/releases/tag/nightly-2026-10-22"
+    },
+    {
+      "id": "melonds",
+      "rosterName": "melonDS",
+      "packageName": "melonDS",
+      "systems": [
+        {
+          "id": "NDS",
+          "name": "Nintendo DS"
+        },
+        {
+          "id": "DSI",
+          "name": "Nintendo DSi"
+        }
+      ],
+      "repository": "https://github.com/ToolAssisted-run/chimera-core-melonds",
+      "nightly": "nightly-2026-10-22",
+      "released": "2026-10-22T10:44:39Z",
+      "commit": "bdbf89cf4883c6d588523dd72cbbf640935413e4",
+      "versionDate": "2026-10-22T08:13:53Z",
+      "file": "1.0.0Cores/melonds-bdbf89cf4883c6d588523dd72cbbf640935413e4.chimeraCore",
+      "size": 1673195,
+      "sha256": "10b0f66a56a14eacec3d9ad56fb54c3614ed84627cb6e8011d79b2f050a32a75",
+      "releaseUrl": "https://github.com/ToolAssisted-run/chimera-core-melonds/releases/tag/nightly-2026-10-22"
+    },
+    {
+      "id": "open4dboxing",
+      "rosterName": "Open4DBoxing",
+      "packageName": "Open4DBoxing",
+      "systems": [
+        {
+          "id": "4DSportsBoxing",
+          "name": "4D Sports Boxing"
+        }
+      ],
+      "repository": "https://github.com/ToolAssisted-run/chimera-core-open4dboxing",
+      "nightly": "nightly-2026-10-25",
+      "released": "2026-10-25T09:17:12Z",
+      "commit": "d0e69f6ee7d3ffe8939278922791c95165575b9b",
+      "versionDate": "2026-10-24T14:45:26Z",
+      "file": "1.0.0Cores/open4dboxing-d0e69f6ee7d3ffe8939278922791c95165575b9b.chimeraCore",
+      "size": 5006566,
+      "sha256": "7600667989fc4a5f23f246620cb068f8114c467f5a9e1d189992174b7ad42195",
+      "releaseUrl": "https://github.com/ToolAssisted-run/chimera-core-open4dboxing/releases/tag/nightly-2026-10-25"
+    },
+    {
+      "id": "openbor",
+      "rosterName": "OpenBOR",
+      "packageName": "OpenBOR",
+      "systems": [
+        {
+          "id": "OpenBOR",
+          "name": "OpenBOR"
+        }
+      ],
+      "repository": "https://github.com/ToolAssisted-run/chimera-core-openbor",
+      "nightly": "nightly-2026-10-22",
+      "released": "2026-10-22T09:18:51Z",
+      "commit": "45b2d535018494a2cdf7ec5e83b46a62ffc9550d",
+      "versionDate": "2026-10-21T16:12:12Z",
+      "file": "1.0.0Cores/openbor-45b2d535018494a2cdf7ec5e83b46a62ffc9550d.chimeraCore",
+      "size": 1464478,
+      "sha256": "ec33abbaca053bf0a26f5b2240be812914981f34ec782a3c56f639e4ef4e9dba",
+      "releaseUrl": "https://github.com/ToolAssisted-run/chimera-core-openbor/releases/tag/nightly-2026-10-22"
+    },
+    {
+      "id": "opensamurai",
+      "rosterName": "OpenSamurai",
+      "packageName": "OpenSamurai",
+      "systems": [
+        {
+          "id": "SwordOfTheSamurai",
+          "name": "Sword of the Samurai"
+        }
+      ],
+      "repository": "https://github.com/ToolAssisted-run/chimera-core-opensamurai",
+      "nightly": "nightly-2026-10-22",
+      "released": "2026-10-22T09:33:53Z",
+      "commit": "4fc5442686e10e3fa63c00a8702bfaca32b74488",
+      "versionDate": "2026-10-21T16:12:14Z",
+      "file": "1.0.0Cores/opensamurai-4fc5442686e10e3fa63c00a8702bfaca32b74488.chimeraCore",
+      "size": 1784718,
+      "sha256": "d0bc67acfa9069468e9f62698cc183d1e491c739fea8b689025330c5ba5082cb",
+      "releaseUrl": "https://github.com/ToolAssisted-run/chimera-core-opensamurai/releases/tag/nightly-2026-10-22"
+    },
+    {
+      "id": "opera",
+      "rosterName": "Opera",
+      "packageName": "Opera",
+      "systems": [
+        {
+          "id": "3DO",
+          "name": "3DO Interactive Multiplayer"
+        }
+      ],
+      "repository": "https://github.com/ToolAssisted-run/chimera-core-opera",
+      "nightly": "nightly-2026-10-22",
+      "released": "2026-10-22T09:38:24Z",
+      "commit": "2dbe1a01756653e2280f124d1b20efdbe2184266",
+      "versionDate": "2026-10-21T16:12:17Z",
+      "file": "1.0.0Cores/opera-2dbe1a01756653e2280f124d1b20efdbe2184266.chimeraCore",
+      "size": 289558,
+      "sha256": "05da8f262b7770b39f548ac222fc15dfc67683b264d1fd70af44c1d0761355a0",
+      "releaseUrl": "https://github.com/ToolAssisted-run/chimera-core-opera/releases/tag/nightly-2026-10-22"
+    },
+    {
+      "id": "pcem",
+      "rosterName": "PCem",
+      "packageName": "PCem",
+      "systems": [
+        {
+          "id": "PC",
+          "name": "IBM PC compatible"
+        }
+      ],
+      "repository": "https://github.com/ToolAssisted-run/chimera-core-pcem",
+      "nightly": "nightly-2026-10-15",
+      "released": "2026-10-15T09:06:03Z",
+      "commit": "d888c407871a9cfb045953e8ed9f9ba33e8ed157",
+      "versionDate": "2026-10-14T14:13:59Z",
+      "file": "1.0.0Cores/pcem-d888c407871a9cfb045953e8ed9f9ba33e8ed157.chimeraCore",
+      "size": 1981851,
+      "sha256": "57689500c1a5640a884b1cbd174e3a78ae3d5ab674c3e7281e4a20efe2e75bf4",
+      "releaseUrl": "https://github.com/ToolAssisted-run/chimera-core-pcem/releases/tag/nightly-2026-10-15"
+    },
+    {
+      "id": "pcsx2",
+      "rosterName": "PCSX2",
+      "packageName": "PCSX2",
+      "systems": [
+        {
+          "id": "PS2",
+          "name": "PlayStation 2"
+        },
+        {
+          "id": "NAMCO246",
+          "name": "NAMCO System 246"
+        },
+        {
+          "id": "NAMCO256",
+          "name": "NAMCO System 256"
+        },
+        {
+          "id": "NAMCOSUPER256",
+          "name": "NAMCO Super System 256"
+        }
+      ],
+      "repository": "https://github.com/ToolAssisted-run/chimera-core-pcsx2",
+      "nightly": "nightly-2026-10-25",
+      "released": "2026-10-25T09:17:19Z",
+      "commit": "45e1ad01b0d6491cf299763f20b3d17ffff52731",
+      "versionDate": "2026-10-25T07:19:11Z",
+      "file": "1.0.0Cores/pcsx2-45e1ad01b0d6491cf299763f20b3d17ffff52731.chimeraCore",
+      "size": 36985495,
+      "sha256": "3ae0c9277f719921beccc743b47914ced0f62c795adcfdbfc0a7ef513c72335e",
+      "releaseUrl": "https://github.com/ToolAssisted-run/chimera-core-pcsx2/releases/tag/nightly-2026-10-25"
+    },
+    {
+      "id": "ppsspp",
+      "rosterName": "PPSSPP",
+      "packageName": "PPSSPP",
+      "systems": [
+        {
+          "id": "PSP",
+          "name": "PlayStation Portable"
+        }
+      ],
+      "repository": "https://github.com/ToolAssisted-run/chimera-core-ppsspp",
+      "nightly": "nightly-2026-10-22",
+      "released": "2026-10-22T09:54:08Z",
+      "commit": "386f14ca4ecfb33319c748e4d1530b574e9d925c",
+      "versionDate": "2026-10-21T16:12:22Z",
+      "file": "1.0.0Cores/ppsspp-386f14ca4ecfb33319c748e4d1530b574e9d925c.chimeraCore",
+      "size": 20799433,
+      "sha256": "44c6978bbdf444b172ac1e3bf67ee118281d05054c0a072804b76ea15be179b8",
+      "releaseUrl": "https://github.com/ToolAssisted-run/chimera-core-ppsspp/releases/tag/nightly-2026-10-22"
+    },
+    {
+      "id": "puae",
+      "rosterName": "PUAE",
+      "packageName": "PUAE",
+      "systems": [
+        {
+          "id": "AMIGA",
+          "name": "Commodore Amiga"
+        },
+        {
+          "id": "CD32",
+          "name": "Amiga CD32"
+        },
+        {
+          "id": "CDTV",
+          "name": "Commodore CDTV"
+        }
+      ],
+      "repository": "https://github.com/ToolAssisted-run/chimera-core-puae",
+      "nightly": "nightly-2026-10-15",
+      "released": "2026-10-15T10:36:58Z",
+      "commit": "89120b1e8c9c8c510d27242630031c9b37e61167",
+      "versionDate": "2026-10-15T04:32:50Z",
+      "file": "1.0.0Cores/puae-89120b1e8c9c8c510d27242630031c9b37e61167.chimeraCore",
+      "size": 6396329,
+      "sha256": "736e6cd5342e1a1e7cf4ecc817f16811eb8bebf1e9054e7ca48c166c10ee0734",
+      "releaseUrl": "https://github.com/ToolAssisted-run/chimera-core-puae/releases/tag/nightly-2026-10-15"
+    },
+    {
+      "id": "quickernes",
+      "rosterName": "quickerNES",
+      "packageName": "quickerNES",
+      "systems": [
+        {
+          "id": "NES",
+          "name": "Nintendo Entertainment System"
+        }
+      ],
+      "repository": "https://github.com/ToolAssisted-run/chimera-core-quickernes",
+      "nightly": "nightly-2026-10-22",
+      "released": "2026-10-22T09:31:44Z",
+      "commit": "abfaccdd3c9ff70213791f6417a54fea6af43f3f",
+      "versionDate": "2026-10-21T18:06:19Z",
+      "file": "1.0.0Cores/quickernes-abfaccdd3c9ff70213791f6417a54fea6af43f3f.chimeraCore",
+      "size": 413673,
+      "sha256": "9b99b8aee75dd97ac82a2083cfa363b7abae3d51d614c9e6d5e3eb5721c6b050",
+      "releaseUrl": "https://github.com/ToolAssisted-run/chimera-core-quickernes/releases/tag/nightly-2026-10-22"
+    },
+    {
+      "id": "quickerneshawk",
+      "rosterName": "QuickerNesHawk",
+      "packageName": "QuickerNesHawk",
+      "systems": [
+        {
+          "id": "NES",
+          "name": "Nintendo Entertainment System"
+        }
+      ],
+      "repository": "https://github.com/ToolAssisted-run/chimera-core-neshawk",
+      "nightly": "nightly-2026-10-22",
+      "released": "2026-10-22T09:35:24Z",
+      "commit": "a6d99c646015b28305070f6afe0b20c0bd8f7b8d",
+      "versionDate": "2026-10-21T18:07:17Z",
+      "file": "1.0.0Cores/quickerneshawk-a6d99c646015b28305070f6afe0b20c0bd8f7b8d.chimeraCore",
+      "size": 381485,
+      "sha256": "8a85a54d7c562f9c40c8a8e8aeb5d61b8615a332b98cab00243157854fc5df5a",
+      "releaseUrl": "https://github.com/ToolAssisted-run/chimera-core-neshawk/releases/tag/nightly-2026-10-22"
+    },
+    {
+      "id": "rawgl",
+      "rosterName": "rawgl",
+      "packageName": "rawgl",
+      "systems": [
+        {
+          "id": "AnotherWorld",
+          "name": "Another World"
+        }
+      ],
+      "repository": "https://github.com/ToolAssisted-run/chimera-core-rawgl",
+      "nightly": "nightly-2026-10-22",
+      "released": "2026-10-22T09:32:52Z",
+      "commit": "a005bac32c3674041ba82c7517275e085f66d5ef",
+      "versionDate": "2026-10-21T16:12:29Z",
+      "file": "1.0.0Cores/rawgl-a005bac32c3674041ba82c7517275e085f66d5ef.chimeraCore",
+      "size": 1005940,
+      "sha256": "9e68589b93ed6f01245589f95fedf4a342209dc44685f7d9a01fb365d6bd464f",
+      "releaseUrl": "https://github.com/ToolAssisted-run/chimera-core-rawgl/releases/tag/nightly-2026-10-22"
+    },
+    {
+      "id": "rpcs3",
+      "rosterName": "RPCS3",
+      "packageName": "RPCS3",
+      "systems": [
+        {
+          "id": "PS3",
+          "name": "PlayStation 3"
+        }
+      ],
+      "repository": "https://github.com/ToolAssisted-run/chimera-core-rpcs3",
+      "nightly": "nightly-2026-10-25",
+      "released": "2026-10-25T09:58:04Z",
+      "commit": "a6fca7eedc700e51074d52e43ff26d7ea2ef5bf4",
+      "versionDate": "2026-10-25T06:42:23Z",
+      "file": "1.0.0Cores/rpcs3-a6fca7eedc700e51074d52e43ff26d7ea2ef5bf4.chimeraCore",
+      "size": 47819555,
+      "sha256": "c00f06b9b9e401142fc49d450e510c1dbbcd4a5bf339541b38741b18f1800796",
+      "releaseUrl": "https://github.com/ToolAssisted-run/chimera-core-rpcs3/releases/tag/nightly-2026-10-25"
+    },
+    {
+      "id": "rsdkv3",
+      "rosterName": "RSDKv3",
+      "packageName": "rsdkv3",
+      "systems": [
+        {
+          "id": "SonicCD",
+          "name": "Sonic CD"
+        }
+      ],
+      "repository": "https://github.com/ToolAssisted-run/chimera-core-rsdkv3",
+      "nightly": "nightly-2026-10-22",
+      "released": "2026-10-22T09:33:08Z",
+      "commit": "2d1ba8ca6ea776d8e004624b6790519864dd536d",
+      "versionDate": "2026-10-21T16:12:33Z",
+      "file": "1.0.0Cores/rsdkv3-2d1ba8ca6ea776d8e004624b6790519864dd536d.chimeraCore",
+      "size": 806260,
+      "sha256": "eebc977b94c3631e481bdf36dd1de4a30c31bf58d541415cd2adc1a69c2edfca",
+      "releaseUrl": "https://github.com/ToolAssisted-run/chimera-core-rsdkv3/releases/tag/nightly-2026-10-22"
+    },
+    {
+      "id": "rsdkv4",
+      "rosterName": "RSDKv4",
+      "packageName": "rsdkv4",
+      "systems": [
+        {
+          "id": "Sonic1",
+          "name": "Sonic the Hedgehog (2013)"
+        },
+        {
+          "id": "Sonic2",
+          "name": "Sonic the Hedgehog 2 (2013)"
+        }
+      ],
+      "repository": "https://github.com/ToolAssisted-run/chimera-core-rsdkv4",
+      "nightly": "nightly-2026-10-22",
+      "released": "2026-10-22T09:10:13Z",
+      "commit": "f46f84d0d8f935fa53d8299e69a8d2a2cebc82d9",
+      "versionDate": "2026-10-21T16:13:22Z",
+      "file": "1.0.0Cores/rsdkv4-f46f84d0d8f935fa53d8299e69a8d2a2cebc82d9.chimeraCore",
+      "size": 5720067,
+      "sha256": "7333dc227ed9dd156226d5d0d70763bae7898337694f3cce7942d00e98031624",
+      "releaseUrl": "https://github.com/ToolAssisted-run/chimera-core-rsdkv4/releases/tag/nightly-2026-10-22"
+    },
+    {
+      "id": "rsdkv5",
+      "rosterName": "RSDKv5",
+      "packageName": "rsdkv5",
+      "systems": [
+        {
+          "id": "SonicMania",
+          "name": "Sonic Mania"
+        }
+      ],
+      "repository": "https://github.com/ToolAssisted-run/chimera-core-rsdkv5",
+      "nightly": "nightly-2026-10-22",
+      "released": "2026-10-22T09:32:24Z",
+      "commit": "3848e7c7bd0bcc3824381bc21598789fb5c71ed5",
+      "versionDate": "2026-10-21T16:13:24Z",
+      "file": "1.0.0Cores/rsdkv5-3848e7c7bd0bcc3824381bc21598789fb5c71ed5.chimeraCore",
+      "size": 2395730,
+      "sha256": "1d1b993b85ec605451b020a95c1828bfa6013ae8c0c87c2b37ca1d4fea6736e1",
+      "releaseUrl": "https://github.com/ToolAssisted-run/chimera-core-rsdkv5/releases/tag/nightly-2026-10-22"
+    },
+    {
+      "id": "ruffle",
+      "rosterName": "Ruffle",
+      "packageName": "Ruffle",
+      "systems": [
+        {
+          "id": "Flash",
+          "name": "Flash"
+        }
+      ],
+      "repository": "https://github.com/ToolAssisted-run/chimera-core-ruffle",
+      "nightly": "nightly-2026-10-24",
+      "released": "2026-10-24T09:57:33Z",
+      "commit": "aa50bf87f24da42176c00e6a1deadc3c1ab925b3",
+      "versionDate": "2026-10-24T07:32:06Z",
+      "file": "1.0.0Cores/ruffle-aa50bf87f24da42176c00e6a1deadc3c1ab925b3.chimeraCore",
+      "size": 43618432,
+      "sha256": "5c43597cf154168d483fee3d1e8d1f70a59812a79f4186412a87272f7e627773",
+      "releaseUrl": "https://github.com/ToolAssisted-run/chimera-core-ruffle/releases/tag/nightly-2026-10-24"
+    },
+    {
+      "id": "sdlpop",
+      "rosterName": "SDLPoP",
+      "packageName": "SDLPoP",
+      "systems": [
+        {
+          "id": "PrinceOfPersia",
+          "name": "Prince of Persia"
+        }
+      ],
+      "repository": "https://github.com/ToolAssisted-run/chimera-core-sdlpop",
+      "nightly": "nightly-2026-10-22",
+      "released": "2026-10-22T09:20:14Z",
+      "commit": "c9e1e62f16a9040ec02ef03246dc51be7df0efa9",
+      "versionDate": "2026-10-21T16:12:35Z",
+      "file": "1.0.0Cores/sdlpop-c9e1e62f16a9040ec02ef03246dc51be7df0efa9.chimeraCore",
+      "size": 712292,
+      "sha256": "3d7b255d24dbff619eb732d77d1dc5d5592933dd5a64ddd2174cd22470106397",
+      "releaseUrl": "https://github.com/ToolAssisted-run/chimera-core-sdlpop/releases/tag/nightly-2026-10-22"
+    },
+    {
+      "id": "sdlpop2",
+      "rosterName": "SDLPoP2",
+      "packageName": "SDLPoP2",
+      "systems": [
+        {
+          "id": "PrinceOfPersia2",
+          "name": "Prince of Persia 2"
+        }
+      ],
+      "repository": "https://github.com/ToolAssisted-run/chimera-core-sdlpop2",
+      "nightly": "nightly-2026-10-22",
+      "released": "2026-10-22T09:33:01Z",
+      "commit": "fbd1a5c94c9eb636eb98a4a80f4ad7fa2e5e6c24",
+      "versionDate": "2026-10-21T16:12:37Z",
+      "file": "1.0.0Cores/sdlpop2-fbd1a5c94c9eb636eb98a4a80f4ad7fa2e5e6c24.chimeraCore",
+      "size": 873150,
+      "sha256": "7dfb6018310b245466a9fd80673dc1bda9f57352534c0b1365657197128b8808",
+      "releaseUrl": "https://github.com/ToolAssisted-run/chimera-core-sdlpop2/releases/tag/nightly-2026-10-22"
+    },
+    {
+      "id": "snes9x",
+      "rosterName": "Snes9x",
+      "packageName": "Snes9x",
+      "systems": [
+        {
+          "id": "SNES",
+          "name": "Super Nintendo"
+        }
+      ],
+      "repository": "https://github.com/ToolAssisted-run/chimera-core-snes9x",
+      "nightly": "nightly-2026-10-22",
+      "released": "2026-10-22T09:35:45Z",
+      "commit": "79e0f35a9214c0009cfdf9241f96730c53322d81",
+      "versionDate": "2026-10-21T18:05:40Z",
+      "file": "1.0.0Cores/snes9x-79e0f35a9214c0009cfdf9241f96730c53322d81.chimeraCore",
+      "size": 1166572,
+      "sha256": "3b1fd0c3b4eab5943895ebda1b3511c8debbb46cb3bac1a76976b896b35ab16a",
+      "releaseUrl": "https://github.com/ToolAssisted-run/chimera-core-snes9x/releases/tag/nightly-2026-10-22"
+    },
+    {
+      "id": "stella",
+      "rosterName": "Stella",
+      "packageName": "Stella",
+      "systems": [
+        {
+          "id": "A26",
+          "name": "Atari 2600"
+        }
+      ],
+      "repository": "https://github.com/ToolAssisted-run/chimera-core-stella",
+      "nightly": "nightly-2026-10-22",
+      "released": "2026-10-22T09:20:30Z",
+      "commit": "3c47bccbf9f481d1b1d34de22bc3c5ab267fc2d0",
+      "versionDate": "2026-10-21T18:02:31Z",
+      "file": "1.0.0Cores/stella-3c47bccbf9f481d1b1d34de22bc3c5ab267fc2d0.chimeraCore",
+      "size": 2206354,
+      "sha256": "cd17a2aa1437f2167096f6e6043de78db7a54c3ca1542380a3dd0a126af29ba8",
+      "releaseUrl": "https://github.com/ToolAssisted-run/chimera-core-stella/releases/tag/nightly-2026-10-22"
+    },
+    {
+      "id": "syndicatfx",
+      "rosterName": "SyndicatFX",
+      "packageName": "SyndicatFX",
+      "systems": [
+        {
+          "id": "Syndicate",
+          "name": "Syndicate"
+        }
+      ],
+      "repository": "https://github.com/ToolAssisted-run/chimera-core-syndicatfx",
+      "nightly": "nightly-2026-10-11",
+      "released": "2026-10-11T10:41:12Z",
+      "commit": "d77a1dc595840596671f49d15cdfd1b7892eb0ba",
+      "versionDate": "2026-10-10T16:57:19Z",
+      "file": "1.0.0Cores/syndicatfx-d77a1dc595840596671f49d15cdfd1b7892eb0ba.chimeraCore",
+      "size": 2017155,
+      "sha256": "7fca17621c792c921455b0d3e5354c3f02f40872d36dd5e1e4c013b020b2758c",
+      "releaseUrl": "https://github.com/ToolAssisted-run/chimera-core-syndicatfx/releases/tag/nightly-2026-10-11"
+    },
+    {
+      "id": "tic80",
+      "rosterName": "TIC-80",
+      "packageName": "TIC-80",
+      "systems": [
+        {
+          "id": "TIC80",
+          "name": "TIC-80"
+        }
+      ],
+      "repository": "https://github.com/ToolAssisted-run/chimera-core-tic80",
+      "nightly": "nightly-2026-10-22",
+      "released": "2026-10-22T11:54:18Z",
+      "commit": "8a650b63bb63a9dd44f025171cc71ee0cd765f28",
+      "versionDate": "2026-10-21T17:53:04Z",
+      "file": "1.0.0Cores/tic80-8a650b63bb63a9dd44f025171cc71ee0cd765f28.chimeraCore",
+      "size": 4497440,
+      "sha256": "37e55d29bf6024c2f512b50640c0f823f5df19bed52aa1c00958fcd84b930962",
+      "releaseUrl": "https://github.com/ToolAssisted-run/chimera-core-tic80/releases/tag/nightly-2026-10-22"
+    },
+    {
+      "id": "touchhle",
+      "rosterName": "touchHLE",
+      "packageName": "touchHLE",
+      "systems": [
+        {
+          "id": "iOS",
+          "name": "iPhone OS"
+        }
+      ],
+      "repository": "https://github.com/ToolAssisted-run/chimera-core-touchhle",
+      "nightly": "nightly-2026-10-11",
+      "released": "2026-10-11T11:07:57Z",
+      "commit": "52b4984695c8e6367fc4c47d46ac5df67848daf5",
+      "versionDate": "2026-10-10T16:27:00Z",
+      "file": "1.0.0Cores/touchhle-52b4984695c8e6367fc4c47d46ac5df67848daf5.chimeraCore",
+      "size": 22826426,
+      "sha256": "9794ec0eb9cbb5b8f5d4243d997e1ca26f8404790fcad3c16408811796dd254e",
+      "releaseUrl": "https://github.com/ToolAssisted-run/chimera-core-touchhle/releases/tag/nightly-2026-10-11"
+    },
+    {
+      "id": "uzem",
+      "rosterName": "Uzem",
+      "packageName": "Uzem",
+      "systems": [
+        {
+          "id": "UZE",
+          "name": "Uzebox"
+        }
+      ],
+      "repository": "https://github.com/ToolAssisted-run/chimera-core-uzem",
+      "nightly": "nightly-2026-10-22",
+      "released": "2026-10-22T12:19:26Z",
+      "commit": "94f0c84999e4b6344f9a925fbae80771bfd2ecfb",
+      "versionDate": "2026-10-21T17:50:47Z",
+      "file": "1.0.0Cores/uzem-94f0c84999e4b6344f9a925fbae80771bfd2ecfb.chimeraCore",
+      "size": 348658,
+      "sha256": "71a48f991f2feace910a10546154f75e3c9f2b8e432dad9f23e265cf440b26bb",
+      "releaseUrl": "https://github.com/ToolAssisted-run/chimera-core-uzem/releases/tag/nightly-2026-10-22"
+    },
+    {
+      "id": "vice",
+      "rosterName": "VICE",
+      "packageName": "VICE",
+      "systems": [
+        {
+          "id": "C64",
+          "name": "Commodore 64"
+        }
+      ],
+      "repository": "https://github.com/ToolAssisted-run/chimera-core-vice",
+      "nightly": "nightly-2026-10-22",
+      "released": "2026-10-22T12:26:01Z",
+      "commit": "b2865403b2469a7ead969286a9dd1cb74c4581ad",
+      "versionDate": "2026-10-21T16:12:42Z",
+      "file": "1.0.0Cores/vice-b2865403b2469a7ead969286a9dd1cb74c4581ad.chimeraCore",
+      "size": 1846460,
+      "sha256": "102c2c5fd8228207072f6736ec6f24e50d918b3f62fdc2ba62fcad3c2e0c4ed3",
+      "releaseUrl": "https://github.com/ToolAssisted-run/chimera-core-vice/releases/tag/nightly-2026-10-22"
+    },
+    {
+      "id": "virtualjaguar",
+      "rosterName": "Virtual Jaguar",
+      "packageName": "Virtual Jaguar",
+      "systems": [
+        {
+          "id": "JAG",
+          "name": "Atari Jaguar"
+        },
+        {
+          "id": "JAGCD",
+          "name": "Atari Jaguar CD"
+        }
+      ],
+      "repository": "https://github.com/ToolAssisted-run/chimera-core-virtualjaguar",
+      "nightly": "nightly-2026-10-22",
+      "released": "2026-10-22T11:42:04Z",
+      "commit": "a8e4e48bacb28a3cc5b181354e2be777672d7e72",
+      "versionDate": "2026-10-21T16:13:15Z",
+      "file": "1.0.0Cores/virtualjaguar-a8e4e48bacb28a3cc5b181354e2be777672d7e72.chimeraCore",
+      "size": 1052018,
+      "sha256": "db8f2ab0cc3d91af1bedf03d851c737e522255046de01c01cda8123de4f2d2c2",
+      "releaseUrl": "https://github.com/ToolAssisted-run/chimera-core-virtualjaguar/releases/tag/nightly-2026-10-22"
+    },
+    {
+      "id": "vita3k",
+      "rosterName": "Vita3K",
+      "packageName": "Vita3K",
+      "systems": [
+        {
+          "id": "PSV",
+          "name": "PlayStation Vita"
+        }
+      ],
+      "repository": "https://github.com/ToolAssisted-run/chimera-core-vita3k",
+      "nightly": "nightly-2026-10-24",
+      "released": "2026-10-24T09:37:11Z",
+      "commit": "8e3051686a29452d25626528e9050117970a6b73",
+      "versionDate": "2026-10-24T06:50:33Z",
+      "file": "1.0.0Cores/vita3k-8e3051686a29452d25626528e9050117970a6b73.chimeraCore",
+      "size": 12628232,
+      "sha256": "c764979c565ff7738b8a12e1487b6fe4a221a4491d2e2a422c89dab00b914d2d",
+      "releaseUrl": "https://github.com/ToolAssisted-run/chimera-core-vita3k/releases/tag/nightly-2026-10-24"
+    },
+    {
+      "id": "x68k",
+      "rosterName": "MAME X68000",
+      "packageName": "MAME X68000",
+      "systems": [
+        {
+          "id": "X68000",
+          "name": "Sharp X68000"
+        }
+      ],
+      "repository": "https://github.com/ToolAssisted-run/chimera-core-x68k",
+      "nightly": "nightly-2026-10-24",
+      "released": "2026-10-24T09:26:13Z",
+      "commit": "d2b1f731f7c666d5019c86839da374551fe9d119",
+      "versionDate": "2026-10-23T23:19:37Z",
+      "file": "1.0.0Cores/x68k-d2b1f731f7c666d5019c86839da374551fe9d119.chimeraCore",
+      "size": 11333583,
+      "sha256": "c6ec9da4428c8498995def20eb24600d019da26fa0e332039fd46e2fad337cd1",
+      "releaseUrl": "https://github.com/ToolAssisted-run/chimera-core-x68k/releases/tag/nightly-2026-10-24"
+    },
+    {
+      "id": "xemu",
+      "rosterName": "xemu",
+      "packageName": "xemu",
+      "systems": [
+        {
+          "id": "XBOX",
+          "name": "Xbox"
+        }
+      ],
+      "repository": "https://github.com/ToolAssisted-run/chimera-core-xemu",
+      "nightly": "nightly-2026-10-24",
+      "released": "2026-10-24T09:03:12Z",
+      "commit": "77cb1dde1121a03fe5ebf17f0dae8c18ae208e34",
+      "versionDate": "2026-10-24T07:00:17Z",
+      "file": "1.0.0Cores/xemu-77cb1dde1121a03fe5ebf17f0dae8c18ae208e34.chimeraCore",
+      "size": 38604441,
+      "sha256": "c1db8ab6decfaf0a5acba2de9102f4bd5c0e2658ece2b27e2199529387f6216b",
+      "releaseUrl": "https://github.com/ToolAssisted-run/chimera-core-xemu/releases/tag/nightly-2026-10-24"
+    },
+    {
+      "id": "xenia",
+      "rosterName": "Xenia",
+      "packageName": "Xenia",
+      "systems": [
+        {
+          "id": "X360",
+          "name": "Xbox 360"
+        }
+      ],
+      "repository": "https://github.com/ToolAssisted-run/chimera-core-xenia",
+      "nightly": "nightly-2026-10-22",
+      "released": "2026-10-22T11:07:06Z",
+      "commit": "eb4282e3e4d700443bfaa284c1a7954eb265bc3b",
+      "versionDate": "2026-10-21T16:12:51Z",
+      "file": "1.0.0Cores/xenia-eb4282e3e4d700443bfaa284c1a7954eb265bc3b.chimeraCore",
+      "size": 8269599,
+      "sha256": "ae4fa29f585e3fadb2ce30c81debd48e6a939fdbca17c3a0e9a16a74d4cc9b5f",
+      "releaseUrl": "https://github.com/ToolAssisted-run/chimera-core-xenia/releases/tag/nightly-2026-10-22"
+    },
+    {
+      "id": "zeebx",
+      "rosterName": "Zeebx",
+      "packageName": "Zeebx",
+      "systems": [
+        {
+          "id": "ZEEBO",
+          "name": "Zeebo"
+        }
+      ],
+      "repository": "https://github.com/ToolAssisted-run/chimera-core-zeebx",
+      "nightly": "nightly-2026-10-22",
+      "released": "2026-10-22T10:00:48Z",
+      "commit": "eaace3e2b60f9220a432a85a07aa1635f3d3cba8",
+      "versionDate": "2026-10-21T16:12:53Z",
+      "file": "1.0.0Cores/zeebx-eaace3e2b60f9220a432a85a07aa1635f3d3cba8.chimeraCore",
+      "size": 8153802,
+      "sha256": "67ba6ac6ac2ef2bb8e0f9a2d762f7ce7dc05712d7dc707e947d3e76216311180",
+      "releaseUrl": "https://github.com/ToolAssisted-run/chimera-core-zeebx/releases/tag/nightly-2026-10-22"
+    }
+  ]
+}
