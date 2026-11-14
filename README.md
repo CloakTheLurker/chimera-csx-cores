@@ -102,6 +102,12 @@ Cores published after that date are not part of this set.
 [cores.json](cores.json) lists every package with its repository, nightly,
 commit, commit date, size and SHA-256, and the release page it came from.
 
+## Checked
+
+Every file's SHA-256 equals the digest GitHub recorded for its release asset.
+All 55 packages were opened by chimera-csx's `InstalledCorePackagesTests`, and
+the set passes `MnemonicUniquenessTests` (26 tests in all, 2026-11-14).
+
 ## Licenses
 
 Each core is its own project under its own license and copyright. Every
