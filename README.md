@@ -1,30 +1,40 @@
-# Chimera CSX 1.0.0 cores
+# Chimera CSX cores
 
-The core packages for Chimera CSX 1.0.0: for each official Chimera core, the
-newest nightly it had published on or before 2026-10-27.
+The core packages for Chimera CSX, one folder per release:
 
-These are the `.chimeraCore` files the cores' own repositories published,
+* `1.0.0Cores` - the newest nightly each official core had published on or
+  before 2026-10-27, when Chimera CSX 1.0.0 was cut: 55 packages.
+* `1.2.0Cores` - the latest nightly each core had on 2026-11-14, less the one
+  Chimera CSX 1.2.0 refuses: 62 packages.
+
+Both are the `.chimeraCore` files the cores' own repositories published,
 unmodified. Nothing here is rebuilt, renamed or repacked, so a file's SHA-256
 is the digest GitHub recorded for that release asset.
 
 ## Using them
 
-Copy the `.chimeraCore` files from `1.0.0Cores` into Chimera CSX's `Cores`
-folder, beside the executable. **File > Core Manager** shows where that folder
-is and lists what it found.
+Copy the `.chimeraCore` files from the folder for your Chimera CSX version
+into its `Cores` folder, beside the executable. **File > Core Manager** shows
+where that folder is and lists what it found.
+
+Use `1.0.0Cores` with Chimera CSX 1.0.0 and 1.1.0, and `1.2.0Cores` with
+1.2.0. The newer packages name their settings by key and carry the words in
+`languages/en.json`; 1.2.0 reads them, and an older build would show the keys
+themselves.
 
 Any number of builds can sit side by side: a project runs the build it pins
 when that build is in the folder, and otherwise the one last opened with
 **File > Open Core**, failing that the newest.
 
-All 55 packages were built by the cores' own CI on x86_64 runners. A release
-of that time did not name a CPU, so no file name carries one; these packages
-are for x86_64 Windows, Linux and Intel Macs.
+Every package here is for x86_64, which is what Chimera CSX runs: the 1.0.0 set
+was published before a file name named a CPU, and of the 1.2.0 set only the
+x86_64 package is kept.
 
-## What is here
+## 1.0.0Cores
 
 55 packages, 795 MiB together. The nightly named is the one published on that
-date; the commit inside each package is the version it stamps.
+date; the commit inside each package is the version it stamps. Its index is
+[cores.json](cores.json).
 
 | Core | Systems | Nightly | Package |
 |---|---|---|---|
@@ -84,29 +94,96 @@ date; the commit inside each package is the version it stamps.
 | [Xenia](https://github.com/ToolAssisted-run/chimera-core-xenia) | X360 | 2026-10-22 | <sub>[xenia-eb4282e3e4d700443bfaa284c1a7954eb265bc3b.chimeraCore](1.0.0Cores/xenia-eb4282e3e4d700443bfaa284c1a7954eb265bc3b.chimeraCore)</sub> |
 | [Zeebx](https://github.com/ToolAssisted-run/chimera-core-zeebx) | ZEEBO | 2026-10-22 | <sub>[zeebx-eaace3e2b60f9220a432a85a07aa1635f3d3cba8.chimeraCore](1.0.0Cores/zeebx-eaace3e2b60f9220a432a85a07aa1635f3d3cba8.chimeraCore)</sub> |
 
-The table uses the roster's names. The name a package itself carries is
-`packageName` in [cores.json](cores.json); the Godot 4.7 package, for one,
-says just Godot.
+## 1.2.0Cores
 
-## What is not here
+62 packages, 1075 MiB together. Every core's latest nightly on 2026-11-14 except
+Mesen: Chimera CSX 1.2.0 refuses its package because it declares
+`settings[].optionLabels` as an array, where the frontend reads a map from
+value to label. The core itself runs in Chimera's Qt window, without those
+labels. The file is named in [cores-1.2.0.json](cores-1.2.0.json) so it can be
+added when a frontend reads it.
 
-Seven cores in Chimera's roster had published no nightly by 2026-10-27 and so
-have no package here:
+60 packages are in the folder. The other 2 - Cemu and ScummVM - are
+each above GitHub's 100 MB limit for a repository file, so they are attached to
+[the 1.2.0Cores-oversize release](https://github.com/CloakTheLurker/chimera-csx-cores/releases/tag/1.2.0Cores-oversize);
+the links in the table below download them, and they belong in `Cores` beside
+the rest.
 
-[mesen](https://github.com/ToolAssisted-run/chimera-core-mesen), [cemu](https://github.com/ToolAssisted-run/chimera-core-cemu), [86box](https://github.com/ToolAssisted-run/chimera-core-86box), [zesarux](https://github.com/ToolAssisted-run/chimera-core-zesarux), [rsdkv5u](https://github.com/ToolAssisted-run/chimera-core-rsdkv5u), [scummvm](https://github.com/ToolAssisted-run/chimera-core-scummvm), [supermodel](https://github.com/ToolAssisted-run/chimera-core-supermodel)
+bsnes v115 is here although Chimera's roster does not list it: upstream added
+the core after the cut, and Chimera CSX opens it like any other package.
 
-Cores published after that date are not part of this set.
-
-## Index
-
-[cores.json](cores.json) lists every package with its repository, nightly,
-commit, commit date, size and SHA-256, and the release page it came from.
+| Core | Systems | Nightly | Package |
+|---|---|---|---|
+| [86Box](https://github.com/ToolAssisted-run/chimera-core-86box) | PC | 2026-11-08 | <sub>[86box-0266464125b3315c4168d13f30c2f20981a8dc4b-x86_64.chimeraCore](1.2.0Cores/86box-0266464125b3315c4168d13f30c2f20981a8dc4b-x86_64.chimeraCore)</sub> |
+| [AppleWin](https://github.com/ToolAssisted-run/chimera-core-applewin) | AppleII | 2026-11-07 | <sub>[applewin-89c936a996eca7422aaf73c8d994db8414e74d43-x86_64.chimeraCore](1.2.0Cores/applewin-89c936a996eca7422aaf73c8d994db8414e74d43-x86_64.chimeraCore)</sub> |
+| [ares](https://github.com/ToolAssisted-run/chimera-core-ares) | N64, N64DD, NES, GEN, SMS, GG, SG, A26, MYV, GB, GBC, WS, WSC, ZXS, GBA, CV, MSX, PS1, A52, NGP, NGPC, NG, SFC, 32X, MSX2, MCD, PCE, SGX, MCD32X, PCECD | 2026-11-13 | <sub>[ares-544a670db182394cd8a22ab574c90c4d6ff1559a-x86_64.chimeraCore](1.2.0Cores/ares-544a670db182394cd8a22ab574c90c4d6ff1559a-x86_64.chimeraCore)</sub> |
+| [Azahar](https://github.com/ToolAssisted-run/chimera-core-azahar) | 3DS | 2026-11-13 | <sub>[azahar-a3ac8efb14ce9f16402ab1538c31c055225c15bd-x86_64.chimeraCore](1.2.0Cores/azahar-a3ac8efb14ce9f16402ab1538c31c055225c15bd-x86_64.chimeraCore)</sub> |
+| [bsnes v115](https://github.com/ToolAssisted-run/chimera-core-bsnes115) | SNES | 2026-11-12 | <sub>[bsnes115-f24ce1cf73cb7b039d898cb67a2503b5c6d5ba60-x86_64.chimeraCore](1.2.0Cores/bsnes115-f24ce1cf73cb7b039d898cb67a2503b5c6d5ba60-x86_64.chimeraCore)</sub> |
+| [Cadmium](https://github.com/ToolAssisted-run/chimera-core-cadmium) | CHIP8 | 2026-11-07 | <sub>[cadmium-0f7c85dfdffc01648a2275d8ddd8aa60837170a0-x86_64.chimeraCore](1.2.0Cores/cadmium-0f7c85dfdffc01648a2275d8ddd8aa60837170a0-x86_64.chimeraCore)</sub> |
+| [Cemu](https://github.com/ToolAssisted-run/chimera-core-cemu) | WIIU | 2026-11-13 | <sub>[cemu-8213f49f20835f4c343be1f5f51e5f66ce609e31-x86_64.chimeraCore](https://github.com/CloakTheLurker/chimera-csx-cores/releases/download/1.2.0Cores-oversize/cemu-8213f49f20835f4c343be1f5f51e5f66ce609e31-x86_64.chimeraCore)</sub> |
+| [Dolphin](https://github.com/ToolAssisted-run/chimera-core-dolphin) | GC, Wii, Triforce | 2026-11-13 | <sub>[dolphin-05934d488a17b9c1e6a6e2b1235cbc6e959dbf67-x86_64.chimeraCore](1.2.0Cores/dolphin-05934d488a17b9c1e6a6e2b1235cbc6e959dbf67-x86_64.chimeraCore)</sub> |
+| [DOSBox-X](https://github.com/ToolAssisted-run/chimera-core-dosbox-x) | DOS | 2026-11-09 | <sub>[dosbox-x-8e99b5bf369a366fa6e4bac0f6b24ae8b2598826-x86_64.chimeraCore](1.2.0Cores/dosbox-x-8e99b5bf369a366fa6e4bac0f6b24ae8b2598826-x86_64.chimeraCore)</sub> |
+| [DSDA-Doom](https://github.com/ToolAssisted-run/chimera-core-dsda) | Doom | 2026-11-07 | <sub>[dsda-d2360d2e6dee1f6234b1cbff121624a032026de2-x86_64.chimeraCore](1.2.0Cores/dsda-d2360d2e6dee1f6234b1cbff121624a032026de2-x86_64.chimeraCore)</sub> |
+| [DuckStation](https://github.com/ToolAssisted-run/chimera-core-duckstation) | PS1, NAMCOS11, KONAMIGQ | 2026-11-13 | <sub>[duckstation-22652846fc013d3de8d79cb8b3eb5ff1eb744d46-x86_64.chimeraCore](1.2.0Cores/duckstation-22652846fc013d3de8d79cb8b3eb5ff1eb744d46-x86_64.chimeraCore)</sub> |
+| [EKA2L1](https://github.com/ToolAssisted-run/chimera-core-eka2l1) | SYMBIAN | 2026-11-13 | <sub>[eka2l1-c7554c94517b1decf407af9709a3b903bdd9a3fc-x86_64.chimeraCore](1.2.0Cores/eka2l1-c7554c94517b1decf407af9709a3b903bdd9a3fc-x86_64.chimeraCore)</sub> |
+| [FBNeo](https://github.com/ToolAssisted-run/chimera-core-fbneo) | CPS1, CPS2, CPS3, NEOGEO, SYS16, NEOCD | 2026-11-08 | <sub>[fbneo-e54f1691bac57c016883e06d6d39e81777fb58af-x86_64.chimeraCore](1.2.0Cores/fbneo-e54f1691bac57c016883e06d6d39e81777fb58af-x86_64.chimeraCore)</sub> |
+| [Flycast](https://github.com/ToolAssisted-run/chimera-core-flycast) | DC, NAOMI, NAOMI2, AW | 2026-11-13 | <sub>[flycast-a4c8c31759f45b18cf1866d0c394096330d5d9c9-x86_64.chimeraCore](1.2.0Cores/flycast-a4c8c31759f45b18cf1866d0c394096330d5d9c9-x86_64.chimeraCore)</sub> |
+| [FreeJ2ME-Plus](https://github.com/ToolAssisted-run/chimera-core-freej2me) | J2ME | 2026-11-07 | <sub>[freej2me-3f5a1d36d2ea3d4c58ece231fd3d59461d002d2a-x86_64.chimeraCore](1.2.0Cores/freej2me-3f5a1d36d2ea3d4c58ece231fd3d59461d002d2a-x86_64.chimeraCore)</sub> |
+| [Fuse](https://github.com/ToolAssisted-run/chimera-core-fuse) | ZXS | 2026-11-07 | <sub>[fuse-94a7374ff38133662d0a90842c7cd6e1fba5a827-x86_64.chimeraCore](1.2.0Cores/fuse-94a7374ff38133662d0a90842c7cd6e1fba5a827-x86_64.chimeraCore)</sub> |
+| [Gambatte](https://github.com/ToolAssisted-run/chimera-core-gambatte) | GB, GBC, SGB, GBL | 2026-11-07 | <sub>[gambatte-19ab19745b2a9b19cca65c9efafcc3dec4052a8b-x86_64.chimeraCore](1.2.0Cores/gambatte-19ab19745b2a9b19cca65c9efafcc3dec4052a8b-x86_64.chimeraCore)</sub> |
+| [Godot 4.4](https://github.com/ToolAssisted-run/chimera-core-godot44) | Godot | 2026-11-13 | <sub>[godot44-b523903be4bcb694bbd27561137ea2bdec1a745a-x86_64.chimeraCore](1.2.0Cores/godot44-b523903be4bcb694bbd27561137ea2bdec1a745a-x86_64.chimeraCore)</sub> |
+| [Godot 4.5](https://github.com/ToolAssisted-run/chimera-core-godot45) | Godot | 2026-11-13 | <sub>[godot45-95c179a9bfb9432ba5a14f10305b4293ab9c3f46-x86_64.chimeraCore](1.2.0Cores/godot45-95c179a9bfb9432ba5a14f10305b4293ab9c3f46-x86_64.chimeraCore)</sub> |
+| [Godot 4.6](https://github.com/ToolAssisted-run/chimera-core-godot46) | Godot | 2026-11-13 | <sub>[godot46-1e101bf2b9b0c193135857845457d679a6938039-x86_64.chimeraCore](1.2.0Cores/godot46-1e101bf2b9b0c193135857845457d679a6938039-x86_64.chimeraCore)</sub> |
+| [Godot 4.7](https://github.com/ToolAssisted-run/chimera-core-godot47) | Godot | 2026-11-13 | <sub>[godot47-526677833d8e7290cc8e94ed59fe1b1114e9e5ab-x86_64.chimeraCore](1.2.0Cores/godot47-526677833d8e7290cc8e94ed59fe1b1114e9e5ab-x86_64.chimeraCore)</sub> |
+| [Genesis Plus GX](https://github.com/ToolAssisted-run/chimera-core-gpgx) | GEN, SMS, GG, SG, PICO | 2026-11-07 | <sub>[gpgx-5f1e922a78ee7af3461ce42e8d89ac59a81da71d-x86_64.chimeraCore](1.2.0Cores/gpgx-5f1e922a78ee7af3461ce42e8d89ac59a81da71d-x86_64.chimeraCore)</sub> |
+| [Ikemen GO](https://github.com/ToolAssisted-run/chimera-core-ikemen) | IkemenGO | 2026-11-13 | <sub>[ikemen-de65622f7288b975ff22500c3679d77f985730bb-x86_64.chimeraCore](1.2.0Cores/ikemen-de65622f7288b975ff22500c3679d77f985730bb-x86_64.chimeraCore)</sub> |
+| [MAME](https://github.com/ToolAssisted-run/chimera-core-mame) | ARCADE | 2026-11-13 | <sub>[mame-b2d440a3cd4d7f718b8a28f6bc96cb3b55d99f03-x86_64.chimeraCore](1.2.0Cores/mame-b2d440a3cd4d7f718b8a28f6bc96cb3b55d99f03-x86_64.chimeraCore)</sub> |
+| [MAME Home Systems](https://github.com/ToolAssisted-run/chimera-core-mamehome) | A78, INTV, VEC, O2, ChannelF, AmstradCPC, TI83, BBC | 2026-11-13 | <sub>[mamehome-7f90fb5a3f1bf44526131be0c1c5c37c3bbce20b-x86_64.chimeraCore](1.2.0Cores/mamehome-7f90fb5a3f1bf44526131be0c1c5c37c3bbce20b-x86_64.chimeraCore)</sub> |
+| [Mednafen](https://github.com/ToolAssisted-run/chimera-core-mednafen) | SAT, VB, PCFX, LYNX, STV | 2026-11-08 | <sub>[mednafen-6657fcaf012e679d59a6e8d29fdf680787535b9f-x86_64.chimeraCore](1.2.0Cores/mednafen-6657fcaf012e679d59a6e8d29fdf680787535b9f-x86_64.chimeraCore)</sub> |
+| [melonDS](https://github.com/ToolAssisted-run/chimera-core-melonds) | NDS, DSI | 2026-11-13 | <sub>[melonds-8764e4cc8bec1115b069bd8c94b042c14ddb6b47-x86_64.chimeraCore](1.2.0Cores/melonds-8764e4cc8bec1115b069bd8c94b042c14ddb6b47-x86_64.chimeraCore)</sub> |
+| [Open4DBoxing](https://github.com/ToolAssisted-run/chimera-core-open4dboxing) | 4DSportsBoxing | 2026-11-06 | <sub>[open4dboxing-2558ee5fb4fa51d3cb708a509c52a7078bcc3576-x86_64.chimeraCore](1.2.0Cores/open4dboxing-2558ee5fb4fa51d3cb708a509c52a7078bcc3576-x86_64.chimeraCore)</sub> |
+| [OpenBOR](https://github.com/ToolAssisted-run/chimera-core-openbor) | OpenBOR | 2026-11-07 | <sub>[openbor-b3682d815d95509eb7e227c5380c2c2a9119f7c5-x86_64.chimeraCore](1.2.0Cores/openbor-b3682d815d95509eb7e227c5380c2c2a9119f7c5-x86_64.chimeraCore)</sub> |
+| [OpenSamurai](https://github.com/ToolAssisted-run/chimera-core-opensamurai) | SwordOfTheSamurai | 2026-11-13 | <sub>[opensamurai-16b1c9a9762d4767da093fce9978d1efd418b793-x86_64.chimeraCore](1.2.0Cores/opensamurai-16b1c9a9762d4767da093fce9978d1efd418b793-x86_64.chimeraCore)</sub> |
+| [Opera](https://github.com/ToolAssisted-run/chimera-core-opera) | 3DO | 2026-11-07 | <sub>[opera-0e5c58ba19177d5da3b9a802a454e38cf824a3ae-x86_64.chimeraCore](1.2.0Cores/opera-0e5c58ba19177d5da3b9a802a454e38cf824a3ae-x86_64.chimeraCore)</sub> |
+| [PCem](https://github.com/ToolAssisted-run/chimera-core-pcem) | PC | 2026-11-13 | <sub>[pcem-4ba9a26298e768875001977a133244b2176bb200-x86_64.chimeraCore](1.2.0Cores/pcem-4ba9a26298e768875001977a133244b2176bb200-x86_64.chimeraCore)</sub> |
+| [PCSX2](https://github.com/ToolAssisted-run/chimera-core-pcsx2) | PS2, NAMCO246, NAMCO256, NAMCOSUPER256 | 2026-11-13 | <sub>[pcsx2-4e8141adebc56fd787374419ed31d64b26b6a693-x86_64.chimeraCore](1.2.0Cores/pcsx2-4e8141adebc56fd787374419ed31d64b26b6a693-x86_64.chimeraCore)</sub> |
+| [PPSSPP](https://github.com/ToolAssisted-run/chimera-core-ppsspp) | PSP | 2026-11-13 | <sub>[ppsspp-f23eb8bbe2629d43a1c036f67c2e0f88bca73a19-x86_64.chimeraCore](1.2.0Cores/ppsspp-f23eb8bbe2629d43a1c036f67c2e0f88bca73a19-x86_64.chimeraCore)</sub> |
+| [PUAE](https://github.com/ToolAssisted-run/chimera-core-puae) | AMIGA, CD32, CDTV | 2026-11-07 | <sub>[puae-9702a190b538d4adabd5b4dee8c80f854136e3e9-x86_64.chimeraCore](1.2.0Cores/puae-9702a190b538d4adabd5b4dee8c80f854136e3e9-x86_64.chimeraCore)</sub> |
+| [quickerNES](https://github.com/ToolAssisted-run/chimera-core-quickernes) | NES | 2026-11-08 | <sub>[quickernes-34b7f0475b659f2137a3b17a716d5e9a1cea747f-x86_64.chimeraCore](1.2.0Cores/quickernes-34b7f0475b659f2137a3b17a716d5e9a1cea747f-x86_64.chimeraCore)</sub> |
+| [QuickerNesHawk](https://github.com/ToolAssisted-run/chimera-core-neshawk) | NES | 2026-11-07 | <sub>[quickerneshawk-096d94fa7f52ea33dcd0a581883d0afbee0184cd-x86_64.chimeraCore](1.2.0Cores/quickerneshawk-096d94fa7f52ea33dcd0a581883d0afbee0184cd-x86_64.chimeraCore)</sub> |
+| [rawgl](https://github.com/ToolAssisted-run/chimera-core-rawgl) | AnotherWorld | 2026-11-13 | <sub>[rawgl-24bc5d7cc2a6a20e4c77ad10bdee3f351c5e5dd6-x86_64.chimeraCore](1.2.0Cores/rawgl-24bc5d7cc2a6a20e4c77ad10bdee3f351c5e5dd6-x86_64.chimeraCore)</sub> |
+| [RPCS3](https://github.com/ToolAssisted-run/chimera-core-rpcs3) | PS3 | 2026-11-13 | <sub>[rpcs3-8a65e4e858ff90acc5e809cee8a902adaaaeef3a-x86_64.chimeraCore](1.2.0Cores/rpcs3-8a65e4e858ff90acc5e809cee8a902adaaaeef3a-x86_64.chimeraCore)</sub> |
+| [RSDKv3](https://github.com/ToolAssisted-run/chimera-core-rsdkv3) | SonicCD | 2026-11-07 | <sub>[rsdkv3-bb5d3f83a1d497e91cc4c823314c8b40bc0f110f-x86_64.chimeraCore](1.2.0Cores/rsdkv3-bb5d3f83a1d497e91cc4c823314c8b40bc0f110f-x86_64.chimeraCore)</sub> |
+| [RSDKv4](https://github.com/ToolAssisted-run/chimera-core-rsdkv4) | Sonic1, Sonic2 | 2026-11-13 | <sub>[rsdkv4-cf33c9548ecf10aac609c7e54139ca0a8ddabfcb-x86_64.chimeraCore](1.2.0Cores/rsdkv4-cf33c9548ecf10aac609c7e54139ca0a8ddabfcb-x86_64.chimeraCore)</sub> |
+| [RSDKv5](https://github.com/ToolAssisted-run/chimera-core-rsdkv5) | SonicMania | 2026-11-07 | <sub>[rsdkv5-aae935ba493c4dc109065f51b4d11cee5711ec25-x86_64.chimeraCore](1.2.0Cores/rsdkv5-aae935ba493c4dc109065f51b4d11cee5711ec25-x86_64.chimeraCore)</sub> |
+| [RSDKv5U](https://github.com/ToolAssisted-run/chimera-core-rsdkv5u) | SonicOrigins | 2026-11-07 | <sub>[rsdkv5u-952541654b54af00da92e7ec4f18f2a4cd3897b2-x86_64.chimeraCore](1.2.0Cores/rsdkv5u-952541654b54af00da92e7ec4f18f2a4cd3897b2-x86_64.chimeraCore)</sub> |
+| [Ruffle](https://github.com/ToolAssisted-run/chimera-core-ruffle) | Flash | 2026-11-13 | <sub>[ruffle-61d5d5888772526f0a4c8a5faca102d3c828a67c-x86_64.chimeraCore](1.2.0Cores/ruffle-61d5d5888772526f0a4c8a5faca102d3c828a67c-x86_64.chimeraCore)</sub> |
+| [ScummVM](https://github.com/ToolAssisted-run/chimera-core-scummvm) | ScummVM | 2026-11-13 | <sub>[scummvm-d001bcd8b860c6630d9e82913291004c4bf9bee7-x86_64.chimeraCore](https://github.com/CloakTheLurker/chimera-csx-cores/releases/download/1.2.0Cores-oversize/scummvm-d001bcd8b860c6630d9e82913291004c4bf9bee7-x86_64.chimeraCore)</sub> |
+| [SDLPoP](https://github.com/ToolAssisted-run/chimera-core-sdlpop) | PrinceOfPersia | 2026-11-13 | <sub>[sdlpop-f3c09396453409e3ee2a86b58fd51f3c9cde6255-x86_64.chimeraCore](1.2.0Cores/sdlpop-f3c09396453409e3ee2a86b58fd51f3c9cde6255-x86_64.chimeraCore)</sub> |
+| [SDLPoP2](https://github.com/ToolAssisted-run/chimera-core-sdlpop2) | PrinceOfPersia2 | 2026-11-13 | <sub>[sdlpop2-e3e6615dcad806e8c305ac4024e2864d23b901af-x86_64.chimeraCore](1.2.0Cores/sdlpop2-e3e6615dcad806e8c305ac4024e2864d23b901af-x86_64.chimeraCore)</sub> |
+| [Snes9x](https://github.com/ToolAssisted-run/chimera-core-snes9x) | SNES | 2026-11-08 | <sub>[snes9x-b1df21ac87c0cf351bf76810c73e51c405ba350a-x86_64.chimeraCore](1.2.0Cores/snes9x-b1df21ac87c0cf351bf76810c73e51c405ba350a-x86_64.chimeraCore)</sub> |
+| [Stella](https://github.com/ToolAssisted-run/chimera-core-stella) | A26 | 2026-11-08 | <sub>[stella-bb69c2cc2b3e36f0d57654bc884964a2098f9493-x86_64.chimeraCore](1.2.0Cores/stella-bb69c2cc2b3e36f0d57654bc884964a2098f9493-x86_64.chimeraCore)</sub> |
+| [Supermodel](https://github.com/ToolAssisted-run/chimera-core-supermodel) | Model3 | 2026-11-13 | <sub>[supermodel-cb1ad4a799b22559b936f20eb59299c0a5fb78b0-x86_64.chimeraCore](1.2.0Cores/supermodel-cb1ad4a799b22559b936f20eb59299c0a5fb78b0-x86_64.chimeraCore)</sub> |
+| [SyndicatFX](https://github.com/ToolAssisted-run/chimera-core-syndicatfx) | Syndicate | 2026-11-13 | <sub>[syndicatfx-777d3b396e17337ac102eb26c416bba4062e50ee-x86_64.chimeraCore](1.2.0Cores/syndicatfx-777d3b396e17337ac102eb26c416bba4062e50ee-x86_64.chimeraCore)</sub> |
+| [TIC-80](https://github.com/ToolAssisted-run/chimera-core-tic80) | TIC80 | 2026-11-07 | <sub>[tic80-c637a363e85b6c0e238021af404000c240948ad0-x86_64.chimeraCore](1.2.0Cores/tic80-c637a363e85b6c0e238021af404000c240948ad0-x86_64.chimeraCore)</sub> |
+| [touchHLE](https://github.com/ToolAssisted-run/chimera-core-touchhle) | iOS | 2026-11-13 | <sub>[touchhle-63769570d241279e5c9941a936c91b94030d5b53-x86_64.chimeraCore](1.2.0Cores/touchhle-63769570d241279e5c9941a936c91b94030d5b53-x86_64.chimeraCore)</sub> |
+| [Uzem](https://github.com/ToolAssisted-run/chimera-core-uzem) | UZE | 2026-11-07 | <sub>[uzem-9f5a31d220bcb5674a7903740d18ac79cf46a7c1-x86_64.chimeraCore](1.2.0Cores/uzem-9f5a31d220bcb5674a7903740d18ac79cf46a7c1-x86_64.chimeraCore)</sub> |
+| [VICE](https://github.com/ToolAssisted-run/chimera-core-vice) | C64 | 2026-11-07 | <sub>[vice-243799b1eddf83e278ac2a028370195c574f8294-x86_64.chimeraCore](1.2.0Cores/vice-243799b1eddf83e278ac2a028370195c574f8294-x86_64.chimeraCore)</sub> |
+| [Virtual Jaguar](https://github.com/ToolAssisted-run/chimera-core-virtualjaguar) | JAG, JAGCD | 2026-11-07 | <sub>[virtualjaguar-246b34ca629884a378d3c0b665b1cbc88dccd02f-x86_64.chimeraCore](1.2.0Cores/virtualjaguar-246b34ca629884a378d3c0b665b1cbc88dccd02f-x86_64.chimeraCore)</sub> |
+| [Vita3K](https://github.com/ToolAssisted-run/chimera-core-vita3k) | PSV | 2026-11-13 | <sub>[vita3k-7bfe3b343bfbf59b6e281a40c0cf9e58e7cc3c68-x86_64.chimeraCore](1.2.0Cores/vita3k-7bfe3b343bfbf59b6e281a40c0cf9e58e7cc3c68-x86_64.chimeraCore)</sub> |
+| [MAME X68000](https://github.com/ToolAssisted-run/chimera-core-x68k) | X68000 | 2026-11-13 | <sub>[x68k-68357c9e3c24b5b1446cac3c09ff9532a56b5e69-x86_64.chimeraCore](1.2.0Cores/x68k-68357c9e3c24b5b1446cac3c09ff9532a56b5e69-x86_64.chimeraCore)</sub> |
+| [xemu](https://github.com/ToolAssisted-run/chimera-core-xemu) | XBOX | 2026-11-13 | <sub>[xemu-aae93b10e5da3ff455290db8cf841fcf044cda01-x86_64.chimeraCore](1.2.0Cores/xemu-aae93b10e5da3ff455290db8cf841fcf044cda01-x86_64.chimeraCore)</sub> |
+| [Xenia](https://github.com/ToolAssisted-run/chimera-core-xenia) | X360 | 2026-11-13 | <sub>[xenia-cb45a542ec546947533aed0b78a134e8f0b75bca-x86_64.chimeraCore](1.2.0Cores/xenia-cb45a542ec546947533aed0b78a134e8f0b75bca-x86_64.chimeraCore)</sub> |
+| [Zeebx](https://github.com/ToolAssisted-run/chimera-core-zeebx) | ZEEBO | 2026-11-13 | <sub>[zeebx-8209ffb0a97ee827fe599d53df5904bd27316ca0-x86_64.chimeraCore](1.2.0Cores/zeebx-8209ffb0a97ee827fe599d53df5904bd27316ca0-x86_64.chimeraCore)</sub> |
+| [ZEsarUX](https://github.com/ToolAssisted-run/chimera-core-zesarux) | ZXN | 2026-11-07 | <sub>[zesarux-148b939238796bc06d4258f4f6da17981e382625-x86_64.chimeraCore](1.2.0Cores/zesarux-148b939238796bc06d4258f4f6da17981e382625-x86_64.chimeraCore)</sub> |
 
 ## Checked
 
 Every file's SHA-256 equals the digest GitHub recorded for its release asset.
-All 55 packages were opened by chimera-csx's `InstalledCorePackagesTests`, and
-the set passes `MnemonicUniquenessTests` (26 tests in all, 2026-11-14).
+Against the Chimera CSX 1.2.0 release, the package contract tests (26) pass on
+all 55 packages of `1.0.0Cores`; in `1.2.0Cores` every package is read and
+becomes a factory, and the only candidate the tests refuse is Mesen, which is
+not in the set.
 
 ## Licenses
 
