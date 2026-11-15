@@ -6,6 +6,8 @@ The core packages for Chimera CSX, one folder per release:
   before 2026-10-27, when Chimera CSX 1.0.0 was cut: 55 packages.
 * `1.2.0Cores` - the latest nightly each core had on 2026-11-14, less the one
   Chimera CSX 1.2.0 refuses: 62 packages.
+* `1.4.0Cores` - the 1.2.0 set plus Mesen, whose single file is in
+  `1.4.0Cores`: 63 packages, the 60 unchanged files read from `1.2.0Cores`.
 
 Both are the `.chimeraCore` files the cores' own repositories published,
 unmodified. Nothing here is rebuilt, renamed or repacked, so a file's SHA-256
@@ -17,10 +19,11 @@ Copy the `.chimeraCore` files from the folder for your Chimera CSX version
 into its `Cores` folder, beside the executable. **File > Core Manager** shows
 where that folder is and lists what it found.
 
-Use `1.0.0Cores` with Chimera CSX 1.0.0 and 1.1.0, and `1.2.0Cores` with
-1.2.0. The newer packages name their settings by key and carry the words in
-`languages/en.json`; 1.2.0 reads them, and an older build would show the keys
-themselves.
+Use `1.0.0Cores` with Chimera CSX 1.0.0 and 1.1.0, `1.2.0Cores` with 1.2.0
+and 1.3.x, and `1.4.0Cores` with 1.4.0. The newer packages name their settings
+by key and carry the words in `languages/en.json`; 1.2.0 reads them, and an
+older build would show the keys themselves. Mesen's package writes its labels
+as an array, which 1.4.0 reads and 1.2.0 refuses, so use Mesen with 1.4.0.
 
 Any number of builds can sit side by side: a project runs the build it pins
 when that build is in the folder, and otherwise the one last opened with
@@ -177,6 +180,27 @@ the core after the cut, and Chimera CSX opens it like any other package.
 | [Zeebx](https://github.com/ToolAssisted-run/chimera-core-zeebx) | ZEEBO | 2026-11-13 | <sub>[zeebx-8209ffb0a97ee827fe599d53df5904bd27316ca0-x86_64.chimeraCore](1.2.0Cores/zeebx-8209ffb0a97ee827fe599d53df5904bd27316ca0-x86_64.chimeraCore)</sub> |
 | [ZEsarUX](https://github.com/ToolAssisted-run/chimera-core-zesarux) | ZXN | 2026-11-07 | <sub>[zesarux-148b939238796bc06d4258f4f6da17981e382625-x86_64.chimeraCore](1.2.0Cores/zesarux-148b939238796bc06d4258f4f6da17981e382625-x86_64.chimeraCore)</sub> |
 
+## 1.4.0Cores
+
+63 packages. The 1.2.0 set is here unchanged, plus Mesen, so a project that
+runs on 1.2.0 or 1.3.x runs on it too. Its index is
+[cores-1.4.0.json](cores-1.4.0.json).
+
+The 60 packages that were in the 1.2.0 folder stay in `1.2.0Cores/`; their
+links in the 1.2.0 table above are the ones to use. The only file in
+`1.4.0Cores/` is Mesen. Cemu and ScummVM are the same two files as before and
+stay in
+[the 1.2.0Cores-oversize release](https://github.com/CloakTheLurker/chimera-csx-cores/releases/tag/1.2.0Cores-oversize).
+Copy the 60 from `1.2.0Cores`, Mesen from `1.4.0Cores`, and the two oversized
+files into `Cores` together.
+
+| Core | Systems | Nightly | Package |
+|---|---|---|---|
+| [Mesen](https://github.com/ToolAssisted-run/chimera-core-mesen) | NES, SNES, SGB, GB, GBC, GBA, PCE, SGX, PCECD, SMS, GG, SG, CV, WS, WSC, PCV2 | 2026-11-08 | <sub>[mesen-f979dd38e0c20285a4556eecc1d41b7574a59905-x86_64.chimeraCore](1.4.0Cores/mesen-f979dd38e0c20285a4556eecc1d41b7574a59905-x86_64.chimeraCore)</sub> |
+
+Mesen's package declares `settings[].optionLabels` as an array in the order of
+its options. Chimera CSX 1.2.0 refused that; 1.4.0 pairs the two and reads it.
+
 ## Checked
 
 Every file's SHA-256 equals the digest GitHub recorded for its release asset.
@@ -184,6 +208,11 @@ Against the Chimera CSX 1.2.0 release, the package contract tests (26) pass on
 all 55 packages of `1.0.0Cores`; in `1.2.0Cores` every package is read and
 becomes a factory, and the only candidate the tests refuse is Mesen, which is
 not in the set.
+
+Against Chimera CSX 1.4.0, the 36 package and roster contract tests pass on the
+61 files in `1.4.0Cores`, including Mesen's package, its factory and the
+roster's system names. The two oversized packages are the same files that were
+checked with `1.2.0Cores`.
 
 ## Licenses
 
