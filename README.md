@@ -8,10 +8,13 @@ The core packages for Chimera CSX, one folder per release:
   Chimera CSX 1.2.0 refuses: 62 packages.
 * `1.4.0Cores` - the 1.2.0 set plus Mesen, whose single file is in
   `1.4.0Cores`: 63 packages, the 60 unchanged files read from `1.2.0Cores`.
+* `1.4.1Cores` - the 1.4.0 set plus the nine cores added on 2026-11-15 and 16:
+  72 packages, the nine new files in `1.4.1Cores` and the rest read from the
+  earlier folders.
 
-Both are the `.chimeraCore` files the cores' own repositories published,
-unmodified. Nothing here is rebuilt, renamed or repacked, so a file's SHA-256
-is the digest GitHub recorded for that release asset.
+Every folder here holds the `.chimeraCore` files the cores' own repositories
+published, unmodified. Nothing here is rebuilt, renamed or repacked, so a
+file's SHA-256 is the digest GitHub recorded for that release asset.
 
 ## Using them
 
@@ -20,10 +23,11 @@ into its `Cores` folder, beside the executable. **File > Core Manager** shows
 where that folder is and lists what it found.
 
 Use `1.0.0Cores` with Chimera CSX 1.0.0 and 1.1.0, `1.2.0Cores` with 1.2.0
-and 1.3.x, and `1.4.0Cores` with 1.4.0. The newer packages name their settings
-by key and carry the words in `languages/en.json`; 1.2.0 reads them, and an
-older build would show the keys themselves. Mesen's package writes its labels
-as an array, which 1.4.0 reads and 1.2.0 refuses, so use Mesen with 1.4.0.
+and 1.3.x, `1.4.0Cores` with 1.4.0, and `1.4.1Cores` with 1.4.1. The newer
+packages name their settings by key and carry the words in `languages/en.json`;
+1.2.0 reads them, and an older build would show the keys themselves. Mesen's
+package writes its labels as an array, which 1.4.0 reads and 1.2.0 refuses, so
+use Mesen with 1.4.0 or newer.
 
 Any number of builds can sit side by side: a project runs the build it pins
 when that build is in the folder, and otherwise the one last opened with
@@ -201,6 +205,41 @@ files into `Cores` together.
 Mesen's package declares `settings[].optionLabels` as an array in the order of
 its options. Chimera CSX 1.2.0 refused that; 1.4.0 pairs the two and reads it.
 
+## 1.4.1Cores
+
+72 packages. The 1.4.0 set is here unchanged, plus the nine cores upstream
+added on 2026-11-15 and 16: Gearboy, Gearsystem, Gearcoleco, Geargrafx,
+Gearlynx, Pokket, Geartowns, blueMSX and Sonic 3 A.I.R. Its index is
+[cores-1.4.1.json](cores-1.4.1.json).
+
+The 60 packages in `1.2.0Cores/` and Mesen in `1.4.0Cores/` are the ones the
+earlier tables link; the nine new files are in `1.4.1Cores/`. Cemu and ScummVM
+are the same two files and stay in
+[the 1.2.0Cores-oversize release](https://github.com/CloakTheLurker/chimera-csx-cores/releases/tag/1.2.0Cores-oversize).
+Copy all of them into `Cores` together.
+
+The nine bring the link-cable systems the earlier sets did not have - Game Gear
+Link, Mark III Link and Atari Lynx Link - and the Coleco ADAM, the Sony
+PocketStation, the FM Towns, and the MSX2+ and turbo R; Geargrafx adds another
+PC Engine CD core and Gearboy another Game Boy family core, beside Sonic 3 A.I.R.
+as a game core. Each package declares the firmware it
+needs - boot ROMs, a System Card, MSX and PocketStation BIOSes, FM Towns ROMs or
+the free TOWNSROM set, and the Sonic & Knuckles + Sonic 3 ROM - and the wizard
+asks for it. Gearsystem's FM sound chip and Sonic 3 A.I.R. are non-commercial,
+as Chimera's README says.
+
+| Core | Systems | Nightly | Package |
+|---|---|---|---|
+| [Gearboy](https://github.com/ToolAssisted-run/chimera-core-gearboy) | GB, GBC, SGB, GBL | 2026-11-15 | <sub>[gearboy-7aaf5a77db9ca53e81243ede71b458bcb6eb7954-x86_64.chimeraCore](1.4.1Cores/gearboy-7aaf5a77db9ca53e81243ede71b458bcb6eb7954-x86_64.chimeraCore)</sub> |
+| [Gearsystem](https://github.com/ToolAssisted-run/chimera-core-gearsystem) | SMS, GG, SG, GGL, M3L | 2026-11-15 | <sub>[gearsystem-fbd5a45f9737955bfceb209f56d8d33408698a18-x86_64.chimeraCore](1.4.1Cores/gearsystem-fbd5a45f9737955bfceb209f56d8d33408698a18-x86_64.chimeraCore)</sub> |
+| [Gearcoleco](https://github.com/ToolAssisted-run/chimera-core-gearcoleco) | CV, ADAM | 2026-11-16 | <sub>[gearcoleco-a61de165d4454540af308c676e09e97bc269e0bf-x86_64.chimeraCore](1.4.1Cores/gearcoleco-a61de165d4454540af308c676e09e97bc269e0bf-x86_64.chimeraCore)</sub> |
+| [Geargrafx](https://github.com/ToolAssisted-run/chimera-core-geargrafx) | PCE, SGX, PCECD | 2026-11-15 | <sub>[geargrafx-040d754715ae20c81b796fafeeeaea94b30e5432-x86_64.chimeraCore](1.4.1Cores/geargrafx-040d754715ae20c81b796fafeeeaea94b30e5432-x86_64.chimeraCore)</sub> |
+| [Gearlynx](https://github.com/ToolAssisted-run/chimera-core-gearlynx) | LYNX, LYNXLINK | 2026-11-15 | <sub>[gearlynx-0c7ad05d7029e0bb209aa776367288696e0e854e-x86_64.chimeraCore](1.4.1Cores/gearlynx-0c7ad05d7029e0bb209aa776367288696e0e854e-x86_64.chimeraCore)</sub> |
+| [Pokket](https://github.com/ToolAssisted-run/chimera-core-pokket) | POCKETSTATION | 2026-11-15 | <sub>[pokket-d1d441361feabed164db613eb2f63c63a85540d3-x86_64.chimeraCore](1.4.1Cores/pokket-d1d441361feabed164db613eb2f63c63a85540d3-x86_64.chimeraCore)</sub> |
+| [Geartowns](https://github.com/ToolAssisted-run/chimera-core-geartowns) | FMTowns | 2026-11-15 | <sub>[geartowns-ce6070948052cbece44004766e4897babea50772-x86_64.chimeraCore](1.4.1Cores/geartowns-ce6070948052cbece44004766e4897babea50772-x86_64.chimeraCore)</sub> |
+| [blueMSX](https://github.com/ToolAssisted-run/chimera-core-bluemsx) | MSX, MSX2, MSX2P, MSXTR | 2026-11-15 | <sub>[bluemsx-72c20df7437551d13837ca44488b581b515b1637-x86_64.chimeraCore](1.4.1Cores/bluemsx-72c20df7437551d13837ca44488b581b515b1637-x86_64.chimeraCore)</sub> |
+| [Sonic 3 A.I.R.](https://github.com/ToolAssisted-run/chimera-core-sonic3air) | S3AIR | 2026-11-15 | <sub>[sonic3air-24e19755bac1d1aaac79c3c19450903c587145bf-x86_64.chimeraCore](1.4.1Cores/sonic3air-24e19755bac1d1aaac79c3c19450903c587145bf-x86_64.chimeraCore)</sub> |
+
 ## Checked
 
 Every file's SHA-256 equals the digest GitHub recorded for its release asset.
@@ -213,6 +252,11 @@ Against Chimera CSX 1.4.0, the 36 package and roster contract tests pass on the
 61 files in `1.4.0Cores`, including Mesen's package, its factory and the
 roster's system names. The two oversized packages are the same files that were
 checked with `1.2.0Cores`.
+
+Against Chimera CSX 1.4.1, on 2026-11-16, the 36 package and roster contract
+tests pass on the 70 files present here: the 60 in `1.2.0Cores`, Mesen, and the
+nine in `1.4.1Cores`. The two oversized packages are the same files checked
+with `1.2.0Cores`, and the roster names all 72.
 
 ## Licenses
 
