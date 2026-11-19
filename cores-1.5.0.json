@@ -1,11 +1,11 @@
 {
   "formatVersion": 1,
-  "chimeraCsx": "1.4.4",
-  "directory": "1.2.0Cores + 1.4.0Cores + 1.4.1Cores + 1.4.4Cores",
+  "chimeraCsx": "1.5.0",
+  "directory": "1.2.0Cores + 1.4.0Cores + 1.4.1Cores + 1.5.0Cores",
   "latestNightlyOn": "2026-11-19",
   "generated": "2026-11-19",
   "packages": 74,
-  "note": "The 60 packages unchanged from 1.2.0Cores stay in that folder, 1.4.0Cores holds Mesen, 1.4.1Cores holds the nine cores added after 1.4.0, 1.4.4Cores holds fheroes2 and TheXTech; the two packages above GitHub's 100 MB file limit stay in the 1.2.0Cores-oversize release. file and assetUrl say where each package is.",
+  "note": "The 60 packages unchanged from 1.2.0Cores stay in that folder, 1.4.0Cores holds Mesen, 1.4.1Cores holds the nine cores added after 1.4.0, 1.5.0Cores holds fheroes2 and TheXTech; the two packages above GitHub's 100 MB file limit stay in the 1.2.0Cores-oversize release. file and assetUrl say where each package is.",
   "cores": [
     {
       "id": "quickernes",
@@ -2064,7 +2064,7 @@
       "versionDate": "2026-11-19T14:18:50Z",
       "arch": "x86_64",
       "stored": "repository",
-      "file": "1.4.4Cores/fheroes2-0645d3273b3354a9b66b441bf8f68ae90d04905b-x86_64.chimeraCore",
+      "file": "1.5.0Cores/fheroes2-0645d3273b3354a9b66b441bf8f68ae90d04905b-x86_64.chimeraCore",
       "assetUrl": null,
       "size": 5617628,
       "sha256": "b83b8cabb5cdae8392bd8d87e32d9d82e1bc1388bd18730f0efc4294f115ecbe",
@@ -2087,7 +2087,7 @@
       "versionDate": "2026-11-19T14:18:50Z",
       "arch": "x86_64",
       "stored": "repository",
-      "file": "1.4.4Cores/thextech-5372b92b739802278e9deed9edceec55ec0a62cd-x86_64.chimeraCore",
+      "file": "1.5.0Cores/thextech-5372b92b739802278e9deed9edceec55ec0a62cd-x86_64.chimeraCore",
       "assetUrl": null,
       "size": 4446049,
       "sha256": "13972f4aee2afeb4bad0cba2a7367271629d9ca381c1327691cf6e81a39017e1",
