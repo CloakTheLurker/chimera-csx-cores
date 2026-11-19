@@ -11,6 +11,10 @@ The core packages for Chimera CSX, one folder per release:
 * `1.4.1Cores` - the 1.4.0 set plus the nine cores added on 2026-11-15 and 16:
   72 packages, the nine new files in `1.4.1Cores` and the rest read from the
   earlier folders.
+* `1.4.4Cores` - the 1.4.1 set plus fheroes2 and TheXTech, the two game cores
+  added on 2026-11-19: 74 packages, the two new files in `1.4.4Cores` and the
+  rest read from the earlier folders. It is for the next release, 1.4.4, whose
+  roster names the two cores.
 
 Every folder here holds the `.chimeraCore` files the cores' own repositories
 published, unmodified. Nothing here is rebuilt, renamed or repacked, so a
@@ -23,11 +27,13 @@ into its `Cores` folder, beside the executable. **File > Core Manager** shows
 where that folder is and lists what it found.
 
 Use `1.0.0Cores` with Chimera CSX 1.0.0 and 1.1.0, `1.2.0Cores` with 1.2.0
-and 1.3.x, `1.4.0Cores` with 1.4.0, and `1.4.1Cores` with 1.4.1. The newer
-packages name their settings by key and carry the words in `languages/en.json`;
-1.2.0 reads them, and an older build would show the keys themselves. Mesen's
-package writes its labels as an array, which 1.4.0 reads and 1.2.0 refuses, so
-use Mesen with 1.4.0 or newer.
+and 1.3.x, `1.4.0Cores` with 1.4.0, `1.4.1Cores` with 1.4.1 to 1.4.3, and
+`1.4.4Cores` with 1.4.4 and later. 1.4.4 is the first release whose roster
+names fheroes2 and TheXTech; 1.4.3 opens both packages as it opens any other.
+The newer packages name their settings by key and carry the words in
+`languages/en.json`; 1.2.0 reads them, and an older build would show the keys
+themselves. Mesen's package writes its labels as an array, which 1.4.0 reads and
+1.2.0 refuses, so use Mesen with 1.4.0 or newer.
 
 Any number of builds can sit side by side: a project runs the build it pins
 when that build is in the folder, and otherwise the one last opened with
@@ -240,6 +246,30 @@ as Chimera's README says.
 | [blueMSX](https://github.com/ToolAssisted-run/chimera-core-bluemsx) | MSX, MSX2, MSX2P, MSXTR | 2026-11-15 | <sub>[bluemsx-72c20df7437551d13837ca44488b581b515b1637-x86_64.chimeraCore](1.4.1Cores/bluemsx-72c20df7437551d13837ca44488b581b515b1637-x86_64.chimeraCore)</sub> |
 | [Sonic 3 A.I.R.](https://github.com/ToolAssisted-run/chimera-core-sonic3air) | S3AIR | 2026-11-15 | <sub>[sonic3air-24e19755bac1d1aaac79c3c19450903c587145bf-x86_64.chimeraCore](1.4.1Cores/sonic3air-24e19755bac1d1aaac79c3c19450903c587145bf-x86_64.chimeraCore)</sub> |
 
+## 1.4.4Cores
+
+74 packages. The 1.4.1 set is here unchanged, plus the two game cores added on
+2026-11-19: fheroes2, Heroes of Might and Magic II, and TheXTech, Super Mario
+Bros. X. Its index is [cores-1.4.4.json](cores-1.4.4.json).
+
+The 60 packages in `1.2.0Cores/`, Mesen in `1.4.0Cores/` and the nine in
+`1.4.1Cores/` are the ones the earlier tables link; the two new files are in
+`1.4.4Cores/`. Copy all of them into `Cores` together. Cemu and ScummVM are the
+same two files as before and stay in
+[the 1.2.0Cores-oversize release](https://github.com/CloakTheLurker/chimera-csx-cores/releases/tag/1.2.0Cores-oversize).
+
+Both are game cores and both are x86_64: fheroes2 reads the game's own
+`HEROES2.AGG` data file, or its free demo's, from a file slot, and TheXTech
+wants an SMBX 1.3 asset pack there. Their terms are GPL-2.0 and GPL-3.0, and
+neither is non-commercial. Each package also carries a Save Data window of its
+own design; the WinForms window does not show a package's windows, and its own
+Export Save Data does the same job.
+
+| Core | Systems | Nightly | Package |
+|---|---|---|---|
+| [fheroes2](https://github.com/ToolAssisted-run/chimera-core-fheroes2) | HoMM2 | 2026-11-19 | <sub>[fheroes2-0645d3273b3354a9b66b441bf8f68ae90d04905b-x86_64.chimeraCore](1.4.4Cores/fheroes2-0645d3273b3354a9b66b441bf8f68ae90d04905b-x86_64.chimeraCore)</sub> |
+| [TheXTech](https://github.com/ToolAssisted-run/chimera-core-thextech) | SMBX | 2026-11-19 | <sub>[thextech-5372b92b739802278e9deed9edceec55ec0a62cd-x86_64.chimeraCore](1.4.4Cores/thextech-5372b92b739802278e9deed9edceec55ec0a62cd-x86_64.chimeraCore)</sub> |
+
 ## Checked
 
 Every file's SHA-256 equals the digest GitHub recorded for its release asset.
@@ -257,6 +287,12 @@ Against Chimera CSX 1.4.1, on 2026-11-16, the 36 package and roster contract
 tests pass on the 70 files present here: the 60 in `1.2.0Cores`, Mesen, and the
 nine in `1.4.1Cores`. The two oversized packages are the same files checked
 with `1.2.0Cores`, and the roster names all 72.
+
+Against Chimera CSX 1.4.3 with the 74-row roster of the next release, on
+2026-11-19, the package, roster, mnemonic, language-table and theme contract
+tests pass 39 of 39 on the 72 files in the four folders, with none failed and
+none skipped. Cemu and ScummVM are not part of that check: they are the files
+checked with `1.2.0Cores` and stay out of it.
 
 ## Licenses
 
