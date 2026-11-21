@@ -15,6 +15,11 @@ The core packages for Chimera CSX, one folder per release:
   added on 2026-11-19: 74 packages, the two new files in `1.5.0Cores` and the
   rest read from the earlier folders. It is for release 1.5.0, whose
   roster names the two cores.
+* `1.5.3Cores` - the 1.5.0 set plus the three cores added on 2026-11-21 -
+  OpenGMK, XaviXEmu and OpenSurge - and Supermodel's new package, which adds
+  Sega Model 2 and Model 1: 77 packages, the four changed files in
+  `1.5.3Cores` and the rest read from the earlier folders. It is for release
+  1.5.3, whose roster names the three cores and Supermodel's three boards.
 
 Every folder here holds the `.chimeraCore` files the cores' own repositories
 published, unmodified. Nothing here is rebuilt, renamed or repacked, so a
@@ -27,9 +32,11 @@ into its `Cores` folder, beside the executable. **File > Core Manager** shows
 where that folder is and lists what it found.
 
 Use `1.0.0Cores` with Chimera CSX 1.0.0 and 1.1.0, `1.2.0Cores` with 1.2.0
-and 1.3.x, `1.4.0Cores` with 1.4.0, `1.4.1Cores` with 1.4.1 to 1.4.3, and
-`1.5.0Cores` with 1.5.0 and later. 1.5.0 is the first release whose roster
-names fheroes2 and TheXTech; 1.4.3 opens both packages as it opens any other.
+and 1.3.x, `1.4.0Cores` with 1.4.0, `1.4.1Cores` with 1.4.1 to 1.4.3,
+`1.5.0Cores` with 1.5.0 to 1.5.2, and `1.5.3Cores` with 1.5.3 and later. 1.5.0
+is the first release whose roster names fheroes2 and TheXTech, and 1.5.3 the
+first whose roster names OpenGMK, XaviXEmu and OpenSurge and Supermodel's
+Model 2 and Model 1; 1.4.3 opens the three new packages as it opens any other.
 The newer packages name their settings by key and carry the words in
 `languages/en.json`; 1.2.0 reads them, and an older build would show the keys
 themselves. Mesen's package writes its labels as an array, which 1.4.0 reads and
@@ -270,6 +277,41 @@ Export Save Data does the same job.
 | [fheroes2](https://github.com/ToolAssisted-run/chimera-core-fheroes2) | HoMM2 | 2026-11-19 | <sub>[fheroes2-0645d3273b3354a9b66b441bf8f68ae90d04905b-x86_64.chimeraCore](1.5.0Cores/fheroes2-0645d3273b3354a9b66b441bf8f68ae90d04905b-x86_64.chimeraCore)</sub> |
 | [TheXTech](https://github.com/ToolAssisted-run/chimera-core-thextech) | SMBX | 2026-11-19 | <sub>[thextech-5372b92b739802278e9deed9edceec55ec0a62cd-x86_64.chimeraCore](1.5.0Cores/thextech-5372b92b739802278e9deed9edceec55ec0a62cd-x86_64.chimeraCore)</sub> |
 
+## 1.5.3Cores
+
+77 packages. The 1.5.0 set is here unchanged, plus the three cores added on
+2026-11-21 - OpenGMK, for GameMaker 8 games; XaviXEmu, for XaviX games with
+plain controls; and OpenSurge, the Open Surge Engine - and Supermodel's new
+package, which adds Sega Model 2 and Model 1 to Model 3. Its index is
+[cores-1.5.3.json](cores-1.5.3.json).
+
+The 60 packages in `1.2.0Cores/`, Mesen in `1.4.0Cores/`, the nine in
+`1.4.1Cores/` and the two in `1.5.0Cores/` are the ones the earlier tables
+link; the four files this set adds or replaces are in `1.5.3Cores/`. The
+Supermodel package it replaces stays in `1.2.0Cores/`, where the 1.5.0 set
+reads it. Copy the 75 files the index names into `Cores` together. Cemu and
+ScummVM are the same two files as before and stay in
+[the 1.2.0Cores-oversize release](https://github.com/CloakTheLurker/chimera-csx-cores/releases/tag/1.2.0Cores-oversize).
+
+OpenGMK and OpenSurge are game cores: the first runs the person's own GameMaker
+8.0 or 8.1 game from its `.exe`, and the second ships Surge the Rabbit and
+takes another game made with the engine as a zip. XaviXEmu runs the
+plug-and-play sets whose controls are plain buttons - Excite Boxing plays, MX
+Dirt Rebel and IDATEN Jump are accepted but were not tried - and refuses the
+rest with a reason. Their terms are GPL-2.0-only, GPL-3.0 and BSD-3-Clause;
+none is non-commercial. Supermodel needs the Model 2 and Model 1 ROM sets for
+the boards it now offers, and only the core's own test programs have been run
+on them, not a real game. Each package also carries a Save Data window of its
+own design; the WinForms window does not show a package's windows, and its own
+Export Save Data does the same job.
+
+| Core | Systems | Nightly | Package |
+|---|---|---|---|
+| [OpenGMK](https://github.com/ToolAssisted-run/chimera-core-opengmk) | GameMaker 8 | 2026-11-21 | <sub>[opengmk-e8f34d3c7c7760ba50ecab1ecf13e1dab06fa55a-x86_64.chimeraCore](1.5.3Cores/opengmk-e8f34d3c7c7760ba50ecab1ecf13e1dab06fa55a-x86_64.chimeraCore)</sub> |
+| [XaviXEmu](https://github.com/ToolAssisted-run/chimera-core-xavixemu) | XaviX | 2026-11-21 | <sub>[xavixemu-cac105e3d04596e4db2087028fae13eac5c839d3-x86_64.chimeraCore](1.5.3Cores/xavixemu-cac105e3d04596e4db2087028fae13eac5c839d3-x86_64.chimeraCore)</sub> |
+| [OpenSurge](https://github.com/ToolAssisted-run/chimera-core-opensurge) | Open Surge Engine | 2026-11-21 | <sub>[opensurge-2f0e2e70aee5fcb3dcfea25ac0053cdc5a37febb-x86_64.chimeraCore](1.5.3Cores/opensurge-2f0e2e70aee5fcb3dcfea25ac0053cdc5a37febb-x86_64.chimeraCore)</sub> |
+| [Supermodel](https://github.com/ToolAssisted-run/chimera-core-supermodel) | Model3, Model2, Model1 | 2026-11-21 | <sub>[supermodel-87c384079e5f9d54d2ef1cf80b525600a95f3c9f-x86_64.chimeraCore](1.5.3Cores/supermodel-87c384079e5f9d54d2ef1cf80b525600a95f3c9f-x86_64.chimeraCore)</sub> |
+
 ## Checked
 
 Every file's SHA-256 equals the digest GitHub recorded for its release asset.
@@ -293,6 +335,11 @@ Against Chimera CSX 1.4.3 with the 74-row roster of the next release, on
 tests pass 39 of 39 on the 72 files in the four folders, with none failed and
 none skipped. Cemu and ScummVM are not part of that check: they are the files
 checked with `1.2.0Cores` and stay out of it.
+
+Against Chimera CSX 1.5.3 with the 77-row roster, on 2026-11-21, the four
+contract classes pass 36 of 36 on the 75 files the index names, with none
+failed and none skipped. Cemu and ScummVM are not part of that check either:
+they are the same files checked with `1.2.0Cores`.
 
 ## Licenses
 
